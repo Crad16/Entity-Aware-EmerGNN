@@ -1,9 +1,14 @@
+import os
+import sys
 import torch
 import torch.nn as nn
 import numpy as np
 from torchdrug.layers import functional
 import pickle
 from torch_scatter import scatter_add
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from entity_gate import EntityGate, apply_gate
 
 
 class EmerGNN(nn.Module):
@@ -40,11 +45,29 @@ class EmerGNN(nn.Module):
         self.relation_linear = nn.ModuleList([nn.Linear(2*args.n_dim, 5) for i in range(self.L)])
         self.attn_relation = nn.ModuleList([nn.Linear(5, all_rel) for i in range(self.L)])
 
+        # Entity-Aware EmerGNN: None keeps the original model
+        self.entity_gate = None
+        if getattr(args, 'entity_feat', 'none') != 'none':
+            self.entity_gate = EntityGate(args.entity_feat, args.emb_prefix, self.all_ent, args.n_dim, self.L, args.gate_dim,
+                                          getattr(args, 'gate_version', 'v1'))
+
 
     def init_weight(self):
         for param in self.parameters():
             if param.data.ndim>1 and param.requires_grad:
                 nn.init.xavier_uniform_(param.data)
+
+    def relation_attention(self, l, ht_embed):
+        # 'learned' is the original EmerGNN attention; 'ones' and 'shuffle' are headroom checks
+        attn_mode = getattr(self.args, 'attn_mode', 'learned')
+        if attn_mode == 'ones':
+            return torch.ones(ht_embed.size(0), self.attn_relation[l].out_features, 1, device=ht_embed.device)
+        relation_weight = self.attn_relation[l](nn.ReLU()(self.relation_linear[l](ht_embed)))
+        relation_weight = torch.sigmoid(relation_weight)
+        if attn_mode == 'shuffle':
+            # a fresh random permutation per call, so weights cannot stay tied to their relation
+            relation_weight = relation_weight[:, torch.randperm(relation_weight.size(1), device=relation_weight.device)]
+        return relation_weight.unsqueeze(2)
 
     def enc_ht(self, head, tail, KG):
         if self.args.feat == 'E':
@@ -59,14 +82,16 @@ class EmerGNN(nn.Module):
         hiddens = torch.FloatTensor(np.zeros((n_ent, len(head), self.n_dim))).cuda()
         hiddens[head, torch.arange(len(head)).cuda()] = head_embed
         ht_embed = torch.cat([head_embed, tail_embed], dim=-1)
+        gates = self.entity_gate(ht_embed, center=self.pair_center()) if self.entity_gate is not None else None
         for l in range(self.L):
             hiddens = hiddens.view(n_ent, -1)
-            relation_weight = self.attn_relation[l](nn.ReLU()(self.relation_linear[l](ht_embed)))
-            relation_weight = torch.sigmoid(relation_weight).unsqueeze(2)
+            relation_weight = self.relation_attention(l, ht_embed)
             rel_embed = self.rel_kg[l].weight       # (1, n_rel, n_dim)
             relation_input = relation_weight * rel_embed    #(batch_size, n_rel, n_dim)
             relation_input = relation_input.view(head_embed.size(0), -1, self.n_dim)
             relation_input = relation_input.transpose(0,1).flatten(1)
+            if gates is not None and gates[l] is not None:
+                hiddens = apply_gate(hiddens, gates[l], n_ent, len(head))
             hiddens = functional.generalized_rspmm(KG, relation_input, hiddens, sum='add', mul='mul')
             hiddens = hiddens.view(n_ent * len(head), -1)
             hiddens = self.linear[l](hiddens)
@@ -78,12 +103,13 @@ class EmerGNN(nn.Module):
         hiddens[tail, torch.arange(len(tail)).cuda()] = tail_embed
         for l in range(self.L):
             hiddens = hiddens.view(n_ent, -1)
-            relation_weight = self.attn_relation[l](nn.ReLU()(self.relation_linear[l](ht_embed)))
-            relation_weight = torch.sigmoid(relation_weight).unsqueeze(2)
+            relation_weight = self.relation_attention(l, ht_embed)
             rel_embed = self.rel_kg[l].weight       # (1, n_rel, n_dim)
             relation_input = relation_weight * rel_embed    #(batch_size, n_rel, n_dim)
             relation_input = relation_input.view(head_embed.size(0), -1, self.n_dim)
             relation_input = relation_input.transpose(0,1).flatten(1)
+            if gates is not None and gates[l] is not None:
+                hiddens = apply_gate(hiddens, gates[l], n_ent, len(head))
             hiddens = functional.generalized_rspmm(KG, relation_input, hiddens, sum='add', mul='mul')
             hiddens = hiddens.view(n_ent * len(head), -1)
             hiddens = self.linear[l](hiddens)
@@ -95,6 +121,21 @@ class EmerGNN(nn.Module):
         else:
             embeddings = torch.cat([head_hid, tail_hid], dim=1)
         return embeddings
+
+    @torch.no_grad()
+    def gate_summary(self, head, tail):
+        if self.args.feat == 'E':
+            head_embed, tail_embed = self.ent_kg(head), self.ent_kg(tail)
+        else:
+            head_embed, tail_embed = self.Went(self.ent_kg[head]), self.Went(self.ent_kg[tail])
+        return self.entity_gate.summary(torch.cat([head_embed, tail_embed], dim=-1), center=self.pair_center())
+
+    @torch.no_grad()
+    def pair_center(self):
+        """Mean drug-pair embedding [mean drug; mean drug]; the v2 entity gate centres its query on it."""
+        drug = self.ent_kg.weight if self.args.feat == 'E' else self.Went(self.ent_kg)
+        m = drug.mean(0)
+        return torch.cat([m, m])
 
     def enc_r(self, ht_embed):
         scores = self.Wr(ht_embed)

@@ -22,7 +22,14 @@ parser.add_argument('--n_batch', type=int, default=512, help='batch size')
 parser.add_argument('--epoch_per_test', type=int, default=5, help='frequency of testing')
 parser.add_argument('--test_batch_size', type=int, default=16, help='test batch size')
 parser.add_argument('--out_file_info', type=str, default='', help='extra string for the output file name')
-parser.add_argument('--seed', type=int, default=1234)
+parser.add_argument('--seed', type=int, default=0, help='the original code always used seed 0')
+parser.add_argument('--shuffle_order', action='store_true', help='shuffle training pairs every epoch (the original code trains in file order, which is grouped by interaction type)')
+parser.add_argument('--entity_feat', type=str, default='none', choices=['none', 'id', 'random', 'name', 'llm'], help='entity gate keys; none = original EmerGNN')
+parser.add_argument('--gate_version', type=str, default='v1', choices=['v1', 'v2'], help='entity gate variant (see entity_gate.py)')
+parser.add_argument('--gate_dim', type=int, default=32, help='entity gate query/key dimension')
+parser.add_argument('--gate_lr', type=float, default=None, help='learning rate for entity gate parameters (default: same as lr)')
+parser.add_argument('--emb_prefix', type=str, default='../entity_text/emb/drugbank', help='prefix of the entity vector files')
+parser.add_argument('--attn_mode', type=str, default='learned', choices=['learned', 'ones', 'shuffle'], help='learned: original EmerGNN; ones/shuffle: headroom checks')
 
 class options:
     def __init__():
@@ -46,6 +53,12 @@ if __name__ == '__main__':
 
     if not os.path.exists('results'):
         os.makedirs('results')
+
+    run_tag = args.attn_mode + ('_shuf' if args.shuffle_order else '') + ('' if args.entity_feat == 'none' else '_gate-' + args.entity_feat
+                                                  + ('' if args.gate_version == 'v1' else '-' + args.gate_version))
+    result_file = '%s_%s_seed%d_eval.txt' % (args.dataset, run_tag, args.seed)
+    model_path = os.path.join('saved_models', '%s_%s_seed%d_%%s.pt' % (args.dataset, run_tag, args.seed))
+    os.makedirs('saved_models', exist_ok=True)
 
     def run_model(seed):
         random.seed(seed)
@@ -71,11 +84,22 @@ if __name__ == '__main__':
 
 
         model = BaseModel(eval_ent, eval_rel, args)
+        probe_h, probe_t = test_pos[:256, 0], test_pos[:256, 1]
+        def gate_log():
+            return '\t' + model.model.gate_summary(probe_h, probe_t) if model.model.entity_gate is not None else ''
+        if model.model.entity_gate is not None:
+            init_str = 'epoch:0' + gate_log()
+            print(init_str)
+            with open(os.path.join('results', result_file), 'a+') as f:
+                f.write(init_str + '\n')
         best_acc = -1
         for e in range(args.n_epoch):
             dataloader.shuffle_train()
             KG = dataloader.KG
-            train_pos = torch.LongTensor(dataloader.train_data).cuda()
+            train_data = dataloader.train_data
+            if args.shuffle_order:
+                train_data = train_data[np.random.permutation(len(train_data))]
+            train_pos = torch.LongTensor(train_data).cuda()
             model.train(train_pos, None, KG)
             if (e+1) % args.epoch_per_test == 0:
                 v_f1, v_acc, v_kap = model.evaluate(valid_pos, valid_neg, vKG)
@@ -86,15 +110,18 @@ if __name__ == '__main__':
                     best_acc = v_f1
                     best_str = out_str
                     if args.save_model:
-                        model.save_model(best_str)
+                        model.save_model(best_str, model_path % 'best')
+                out_str += gate_log()
                 print(out_str)
-                with open(os.path.join('results', args.dataset+'_eval.txt'), 'a+') as f:
+                with open(os.path.join('results', result_file), 'a+') as f:
                     f.write(out_str + '\n')
+        if args.save_model:
+            model.save_model('last epoch', model_path % 'last')
         print('Best results:\t' + best_str)
-        with open(os.path.join('results', args.dataset+'_eval.txt'), 'a+') as f:
+        with open(os.path.join('results', result_file), 'a+') as f:
             f.write('Best results:\t' + best_str + '\n\n')
         return -best_acc
 
-    run_model(0)
+    run_model(args.seed)
     
 

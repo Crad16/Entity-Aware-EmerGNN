@@ -24,7 +24,13 @@ class BaseModel(object):
         self.all_rel = args.all_rel
         self.args = args
 
-        self.optimizer = Adam(self.model.parameters(), lr=self.args.lr, weight_decay=self.args.lamb)
+        # the entity gate can use its own learning rate (--gate_lr); without a gate this is the original optimizer
+        gate = self.model.entity_gate
+        gate_ids = {id(p) for p in gate.parameters()} if gate is not None else set()
+        groups = [{'params': [p for p in self.model.parameters() if id(p) not in gate_ids]}]
+        if gate is not None:
+            groups.append({'params': list(gate.parameters()), 'lr': getattr(args, 'gate_lr', None) or self.args.lr})
+        self.optimizer = Adam(groups, lr=self.args.lr, weight_decay=self.args.lamb)
         self.scheduler = ReduceLROnPlateau(self.optimizer, mode='max')
 
         self.bce_loss = nn.BCELoss()
@@ -148,8 +154,8 @@ class BaseModel(object):
             outputs.append(out_str)
         return outputs, np.array(rel_weights), np.array(rel_freq)
 
-    def save_model(self, out_str=''):
-        torch.save(self.model.state_dict(), self.args.dataset+'_saved_model.pt')
+    def save_model(self, out_str='', path=None):
+        torch.save(self.model.state_dict(), path or self.args.dataset+'_saved_model.pt')
         print(out_str, 'model saved')
 
     def load_model(self, model_name='_saved_model.pt'):
