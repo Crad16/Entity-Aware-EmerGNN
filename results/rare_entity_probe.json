@@ -1,0 +1,238 @@
+{
+ "groups": {
+  "cyp_hub": [
+   "CYP3A4",
+   "CYP2C9",
+   "CYP3A5",
+   "CYP2B6",
+   "CYP2C19",
+   "CYP1A2",
+   "CYP1A1",
+   "CYP2C8",
+   "CYP2E1",
+   "CYP2C18",
+   "CYP19A1",
+   "CYP1B1",
+   "CYP2A6",
+   "CYP3A7",
+   "CYP3A7-CYP3A51P",
+   "CYP2D6"
+  ],
+  "other_hub": 58,
+  "cyp_rare": [
+   "CYP4F2",
+   "CYP17A1",
+   "CYP11A1",
+   "CYP11B2",
+   "CYP4A11",
+   "CYP11B1",
+   "CYP24A1",
+   "CYP27A1",
+   "CYP4B1",
+   "CYP51A1",
+   "CYP4F12",
+   "CYP2J2",
+   "CYP26A1",
+   "CYP2R1",
+   "CYP2A13",
+   "CYP3A43",
+   "CYP27B1",
+   "CYP21A2"
+  ],
+  "other_rare": 1125
+ },
+ "results": {
+  "id-v2 [best]": {
+   "hub": {
+    "diff": 0.06513896584510803,
+    "cohen_d": 0.36552071965742505
+   },
+   "rare": {
+    "diff": -0.0007757078856229782,
+    "cohen_d": -0.010568210427155089
+   },
+   "corr_rare_cyp_vs_hub_cyp": -0.12286230270007827,
+   "corr_rare_other_vs_hub_cyp": 0.06234352183645318
+  },
+  "id-v2 [last]": {
+   "hub": {
+    "diff": 0.06741487234830856,
+    "cohen_d": 0.4292387033444645
+   },
+   "rare": {
+    "diff": 0.008868122473359108,
+    "cohen_d": 0.11328638353866606
+   },
+   "corr_rare_cyp_vs_hub_cyp": -0.2951526616178044,
+   "corr_rare_other_vs_hub_cyp": 0.10262571455282066
+  },
+  "id-v1 [best]": {
+   "hub": {
+    "diff": 0.00597071647644043,
+    "cohen_d": 0.09161834424176664
+   },
+   "rare": {
+    "diff": -0.003376901149749756,
+    "cohen_d": -0.10869640030354535
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.38211048177155216,
+   "corr_rare_other_vs_hub_cyp": 0.18613347748276338
+  },
+  "id-v1 [last]": {
+   "hub": {
+    "diff": 0.018281489610671997,
+    "cohen_d": 0.27646963544276937
+   },
+   "rare": {
+    "diff": -0.00038623809814453125,
+    "cohen_d": -0.008467587990627126
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.229860431162871,
+   "corr_rare_other_vs_hub_cyp": 0.48209055980578525
+  },
+  "llm-v2 [best]": {
+   "hub": {
+    "diff": 0.08078517764806747,
+    "cohen_d": 0.2837342478919292
+   },
+   "rare": {
+    "diff": 0.034811243414878845,
+    "cohen_d": 0.19113143535651567
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.9628832649717394,
+   "corr_rare_other_vs_hub_cyp": 0.8571511813789494
+  },
+  "llm-v2 [last]": {
+   "hub": {
+    "diff": 0.14107626676559448,
+    "cohen_d": 0.5650220706816538
+   },
+   "rare": {
+    "diff": 0.1349523961544037,
+    "cohen_d": 0.5689644699509522
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.9570162983535788,
+   "corr_rare_other_vs_hub_cyp": 0.7426109123749031
+  },
+  "llm-v1 [best]": {
+   "hub": {
+    "diff": -0.0026330314576625824,
+    "cohen_d": -0.10433338422992296
+   },
+   "rare": {
+    "diff": 0.01652902364730835,
+    "cohen_d": 0.2548372494039679
+   },
+   "corr_rare_cyp_vs_hub_cyp": -0.01230931432315031,
+   "corr_rare_other_vs_hub_cyp": 0.24699835326139474
+  },
+  "llm-v1 [last]": {
+   "hub": {
+    "diff": -0.0026330314576625824,
+    "cohen_d": -0.10433338422992296
+   },
+   "rare": {
+    "diff": 0.01652902364730835,
+    "cohen_d": 0.2548372494039679
+   },
+   "corr_rare_cyp_vs_hub_cyp": -0.01230931432315031,
+   "corr_rare_other_vs_hub_cyp": 0.24699835326139474
+  },
+  "name-v2 [best]": {
+   "hub": {
+    "diff": 0.030112937092781067,
+    "cohen_d": 0.14527891509455157
+   },
+   "rare": {
+    "diff": 0.041680365800857544,
+    "cohen_d": 0.19395041279709127
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.9629520662759542,
+   "corr_rare_other_vs_hub_cyp": 0.8110717744816272
+  },
+  "name-v2 [last]": {
+   "hub": {
+    "diff": 0.030112937092781067,
+    "cohen_d": 0.14527891509455157
+   },
+   "rare": {
+    "diff": 0.041680365800857544,
+    "cohen_d": 0.19395041279709127
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.9629520662759542,
+   "corr_rare_other_vs_hub_cyp": 0.8110717744816272
+  },
+  "name-v1 [best]": {
+   "hub": {
+    "diff": -0.013152483850717545,
+    "cohen_d": -0.22989855492531877
+   },
+   "rare": {
+    "diff": -0.004954341799020767,
+    "cohen_d": -0.09031158471411498
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.639891754994271,
+   "corr_rare_other_vs_hub_cyp": 0.6320169328897003
+  },
+  "name-v1 [last]": {
+   "hub": {
+    "diff": -0.013152483850717545,
+    "cohen_d": -0.22989855492531877
+   },
+   "rare": {
+    "diff": -0.004954341799020767,
+    "cohen_d": -0.09031158471411498
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.639891754994271,
+   "corr_rare_other_vs_hub_cyp": 0.6320169328897003
+  },
+  "random-v2 [best]": {
+   "hub": {
+    "diff": -0.018809445202350616,
+    "cohen_d": -0.13312858284022386
+   },
+   "rare": {
+    "diff": -0.02542934939265251,
+    "cohen_d": -0.3264696194935217
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.4111555847945567,
+   "corr_rare_other_vs_hub_cyp": -0.37266099003553804
+  },
+  "random-v2 [last]": {
+   "hub": {
+    "diff": -0.024921925738453865,
+    "cohen_d": -0.19754788957251584
+   },
+   "rare": {
+    "diff": -0.005281183868646622,
+    "cohen_d": -0.07553189871822932
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.41290345278165375,
+   "corr_rare_other_vs_hub_cyp": -0.6452928638429826
+  },
+  "random-v1 [best]": {
+   "hub": {
+    "diff": -0.0003779083490371704,
+    "cohen_d": -0.11045839096637661
+   },
+   "rare": {
+    "diff": 0.0013966336846351624,
+    "cohen_d": 0.14109907222016002
+   },
+   "corr_rare_cyp_vs_hub_cyp": -0.05325582803571442,
+   "corr_rare_other_vs_hub_cyp": 0.08184856447851567
+  },
+  "random-v1 [last]": {
+   "hub": {
+    "diff": 0.010078296065330505,
+    "cohen_d": 0.5670083583853753
+   },
+   "rare": {
+    "diff": 0.011284887790679932,
+    "cohen_d": 0.4787039884129699
+   },
+   "corr_rare_cyp_vs_hub_cyp": 0.6148517196831075,
+   "corr_rare_other_vs_hub_cyp": -0.05057756876854799
+  }
+ }
+}
