@@ -1,6 +1,22 @@
+# Install torch and the PyG extensions from their wheel indexes first (see README):
+#   pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+#   pip install torch_scatter torch_cluster -f https://data.pyg.org/whl/torch-2.8.0+cu128.html
+#   pip install torchdrug==0.2.1 --no-deps
+torch==2.8.0
+torch-scatter==2.1.2
+torch-cluster==1.6.3
 torchdrug==0.2.1
-hyperopt==0.2.7
-scipy==1.7.3
-scikit-learn==1.0.2
+rdkit==2023.3.3
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==2.3.3
+hyperopt==0.3.0
 tqdm
-pandas
+decorator
+networkx
+matplotlib
+ninja
+jinja2
+lmdb
+transformers==4.57.6

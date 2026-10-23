@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+
+# datasets (download from Zenodo, see README)
+DrugBank/data/
+TWOSIDES/data/
+
+# generated
+entity_text/emb/
+entity_text/descriptions_v3.jsonl
+DrugBank/results/
+TWOSIDES/results/
+runs/
+*.orig
