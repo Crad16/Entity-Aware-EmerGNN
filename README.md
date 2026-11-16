@@ -82,6 +82,14 @@ Run from `DrugBank/`; outputs go to `results/`.
 | `analysis/rare_entity_probe.py` | does behaviour learned on frequent CYPs carry over to rare ones? |
 | `analysis/name_vs_function.py` | are drug transporters grouped by function or by name? |
 | `analysis/summarize.py` | best-validation epoch of a run log |
+| `analysis/relation_ties.py` | how many paths share an ordered relation sequence (attention ties)? |
+| `analysis/gate_interventions.py`, `analyze_interventions.py` | gate off / mean gate / query replacement / key permutation on a test sample |
+| `analysis/stratify.py`, `kg_calibration.py` | results by mechanism class, shared mediator and KG coverage; calibration |
+| `analysis/kg_variants.py`, `kg_ablation.py`, `analyze_kg_ablation.py` | test-time KG deletions: CYP edges, equal-count controls, 50/90/100% of an emerging drug's edges |
+| `analysis/gate_degree.py` | within-pair CYP-ranking AUC, including candidates with no degree advantage |
+
+The intervention analyses take `--dataset`, `--train_seed` and `--keys`; `analysis/REPRODUCE.md`
+lists the order of the steps, the seeds, and where each number of the progress report comes from.
 
 ## Results
 

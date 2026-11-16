@@ -1,0 +1,290 @@
+{
+ "2hop": {
+  "metabolism": {
+   "pairs": 7367,
+   "pairs_with_paths": 6150,
+   "paths_q": [
+    12.0,
+    32.0,
+    60.0
+   ],
+   "sequences_q": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "tie_size_q": [
+    8.5,
+    26.55625,
+    51.24561403508772
+   ],
+   "tied_share_mean": 0.9079526710183534,
+   "single_out_chance_mean": 0.15062179189073135
+  },
+  "non_pk": {
+   "pairs": 18554,
+   "pairs_with_paths": 12152,
+   "paths_q": [
+    9.0,
+    24.0,
+    49.0
+   ],
+   "sequences_q": [
+    1.0,
+    1.0,
+    2.0
+   ],
+   "tie_size_q": [
+    7.784210526315789,
+    21.666666666666668,
+    45.04255319148936
+   ],
+   "tied_share_mean": 0.8929446749943014,
+   "single_out_chance_mean": 0.16870793273203205
+  },
+  "all": {
+   "pairs": 32322,
+   "pairs_with_paths": 22953,
+   "paths_q": [
+    10.0,
+    27.0,
+    53.0
+   ],
+   "sequences_q": [
+    1.0,
+    2.0,
+    2.0
+   ],
+   "tie_size_q": [
+    8.0,
+    23.066666666666666,
+    46.892857142857146
+   ],
+   "tied_share_mean": 0.8890610660404973,
+   "single_out_chance_mean": 0.17001763466127032
+  }
+ },
+ "3hop": {
+  "metabolism": {
+   "pairs": 7367,
+   "pairs_with_paths": 5573,
+   "paths_q": [
+    5.0,
+    17.0,
+    63.0
+   ],
+   "sequences_q": [
+    3.0,
+    6.0,
+    14.0
+   ],
+   "tie_size_q": [
+    1.8,
+    4.185185185185185,
+    12.106382978723405
+   ],
+   "tied_share_mean": 0.7076432821908297,
+   "single_out_chance_mean": 0.358928447709052
+  },
+  "non_pk": {
+   "pairs": 18554,
+   "pairs_with_paths": 12764,
+   "paths_q": [
+    3.0,
+    11.0,
+    34.25
+   ],
+   "sequences_q": [
+    2.0,
+    4.0,
+    10.0
+   ],
+   "tie_size_q": [
+    1.6666666666666667,
+    3.3333333333333335,
+    8.2
+   ],
+   "tied_share_mean": 0.6870745206294713,
+   "single_out_chance_mean": 0.40010522636773144
+  },
+  "all": {
+   "pairs": 32322,
+   "pairs_with_paths": 22168,
+   "paths_q": [
+    4.0,
+    13.0,
+    47.0
+   ],
+   "sequences_q": [
+    2.0,
+    5.0,
+    12.0
+   ],
+   "tie_size_q": [
+    1.6666666666666667,
+    3.6666666666666665,
+    10.466607810552555
+   ],
+   "tied_share_mean": 0.6926286093008588,
+   "single_out_chance_mean": 0.3847147196305956
+  }
+ },
+ "binds_binds": {
+  "metabolism": {
+   "pairs_sharing_a_bound_gene": 0.8274738699606352,
+   "k_q": [
+    1.0,
+    2.0,
+    4.0
+   ],
+   "single_out_chance_mean": 0.5315885784756248,
+   "pairs_sharing_a_cyp": 0.8251662820686847,
+   "cyp_share_of_tied_genes_mean": 0.9020455954416594,
+   "chance_to_name_one_specific_cyp_mean": 0.5308653793476025
+  },
+  "non_pk": {
+   "pairs_sharing_a_bound_gene": 0.32974021774280476,
+   "k_q": [
+    1.0,
+    2.0,
+    3.0
+   ],
+   "single_out_chance_mean": 0.6519095252672319,
+   "pairs_sharing_a_cyp": 0.2332650641371133,
+   "cyp_share_of_tied_genes_mean": 0.8363607496096839,
+   "chance_to_name_one_specific_cyp_mean": 0.6207717315428612
+  },
+  "all": {
+   "pairs_sharing_a_bound_gene": 0.5034032547490873,
+   "k_q": [
+    1.0,
+    2.0,
+    3.0
+   ],
+   "single_out_chance_mean": 0.6067864183776767,
+   "pairs_sharing_a_cyp": 0.44171152775199557,
+   "cyp_share_of_tied_genes_mean": 0.875899514200952,
+   "chance_to_name_one_specific_cyp_mean": 0.5887067852425676
+  }
+ },
+ "top_2hop_sequences": {
+  "CcSE\u2192CcSE^-1": {
+   "paths": 843968,
+   "pairs": 19166,
+   "k_median": 31.0,
+   "k_p90": 95.0,
+   "share_k_ge_2": 0.9893561515183137
+  },
+  "CbG\u2192CbG^-1": {
+   "paths": 42850,
+   "pairs": 16271,
+   "k_median": 2.0,
+   "k_p90": 5.0,
+   "share_k_ge_2": 0.5993485342019544
+  },
+  "CdG\u2192CdG^-1": {
+   "paths": 13344,
+   "pairs": 2628,
+   "k_median": 1.0,
+   "k_p90": 11.0,
+   "share_k_ge_2": 0.4874429223744292
+  },
+  "CuG\u2192CuG^-1": {
+   "paths": 8983,
+   "pairs": 1839,
+   "k_median": 1.0,
+   "k_p90": 12.0,
+   "share_k_ge_2": 0.4948341489940185
+  },
+  "CuG\u2192CdG^-1": {
+   "paths": 2725,
+   "pairs": 787,
+   "k_median": 1.0,
+   "k_p90": 9.399999999999977,
+   "share_k_ge_2": 0.44472681067344344
+  },
+  "CdG\u2192CuG^-1": {
+   "paths": 2659,
+   "pairs": 791,
+   "k_median": 1.0,
+   "k_p90": 9.0,
+   "share_k_ge_2": 0.44374209860935526
+  },
+  "CtD\u2192CtD^-1": {
+   "paths": 631,
+   "pairs": 580,
+   "k_median": 1.0,
+   "k_p90": 1.0,
+   "share_k_ge_2": 0.06896551724137931
+  },
+  "CpD\u2192CpD^-1": {
+   "paths": 421,
+   "pairs": 344,
+   "k_median": 1.0,
+   "k_p90": 2.0,
+   "share_k_ge_2": 0.18604651162790697
+  }
+ },
+ "top_3hop_sequences": {
+  "CdG\u2192Gr>G\u2192CdG^-1": {
+   "paths": 479649.0,
+   "pairs": 7092,
+   "k_median": 7.0,
+   "k_p90": 116.0,
+   "share_k_ge_2": 0.8227580372250423
+  },
+  "CdG\u2192Gr>G^-1\u2192CdG^-1": {
+   "paths": 469524.0,
+   "pairs": 7094,
+   "k_median": 7.0,
+   "k_p90": 118.0,
+   "share_k_ge_2": 0.838173104031576
+  },
+  "CdG\u2192Gr>G^-1\u2192CuG^-1": {
+   "paths": 424948.0,
+   "pairs": 6671,
+   "k_median": 6.0,
+   "k_p90": 106.0,
+   "share_k_ge_2": 0.8151701394093839
+  },
+  "CuG\u2192Gr>G\u2192CdG^-1": {
+   "paths": 415474.0,
+   "pairs": 6430,
+   "k_median": 7.0,
+   "k_p90": 114.0,
+   "share_k_ge_2": 0.8236391912908243
+  },
+  "CuG\u2192Gr>G^-1\u2192CdG^-1": {
+   "paths": 297196.0,
+   "pairs": 6127,
+   "k_median": 5.0,
+   "k_p90": 81.0,
+   "share_k_ge_2": 0.7950057124204342
+  },
+  "CdG\u2192Gr>G\u2192CuG^-1": {
+   "paths": 283719.0,
+   "pairs": 6224,
+   "k_median": 5.0,
+   "k_p90": 75.0,
+   "share_k_ge_2": 0.7794023136246787
+  },
+  "CuG\u2192Gr>G^-1\u2192CuG^-1": {
+   "paths": 275533.0,
+   "pairs": 5552,
+   "k_median": 5.0,
+   "k_p90": 80.0,
+   "share_k_ge_2": 0.7800792507204611
+  },
+  "CuG\u2192Gr>G\u2192CuG^-1": {
+   "paths": 249198.0,
+   "pairs": 5524,
+   "k_median": 5.0,
+   "k_p90": 78.69999999999982,
+   "share_k_ge_2": 0.7871107892831282
+  }
+ },
+ "3hop_max_tie_per_pair_q": [
+  5.0,
+  51.0
+ ]
+}
