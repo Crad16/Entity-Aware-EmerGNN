@@ -1,0 +1,12 @@
+epoch:2	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.5084 acc:0.7379 kap:0.6766	[Test] f1:0.5469 acc:0.7611 kap:0.7136
+epoch:4	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.5227 acc:0.7444 kap:0.6837	[Test] f1:0.6008 acc:0.7895 kap:0.7483
+epoch:6	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.5863 acc:0.7634 kap:0.7118	[Test] f1:0.5864 acc:0.7814 kap:0.7399
+epoch:8	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.6446 acc:0.7725 kap:0.7186	[Test] f1:0.6333 acc:0.7966 kap:0.7545
+epoch:10	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.6443 acc:0.7594 kap:0.7030	[Test] f1:0.6378 acc:0.7903 kap:0.7477
+epoch:12	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.6183 acc:0.7448 kap:0.6832	[Test] f1:0.6051 acc:0.7803 kap:0.7349
+epoch:14	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.6146 acc:0.7463 kap:0.6864	[Test] f1:0.6213 acc:0.7731 kap:0.7282
+epoch:16	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.5877 acc:0.7220 kap:0.6569	[Test] f1:0.6381 acc:0.7937 kap:0.7526
+epoch:18	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.5673 acc:0.7332 kap:0.6726	[Test] f1:0.6304 acc:0.7762 kap:0.7336
+epoch:20	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.5949 acc:0.7234 kap:0.6583	[Test] f1:0.6275 acc:0.7855 kap:0.7435
+Best results:	epoch:8	feat:M lr:0.001000 lamb:0.00000001 n_batch:32 n_dim:64 layer:3	[Valid] f1:0.6446 acc:0.7725 kap:0.7186	[Test] f1:0.6333 acc:0.7966 kap:0.7545
+

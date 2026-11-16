@@ -1,0 +1,4106 @@
+[
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "baseline F1 (ep10-20 평균)",
+  "split": "S1_1",
+  "text": "0.617",
+  "mean": 0.6174000000000001,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "baseline F1 (ep10-20 평균)",
+  "split": "S1_12",
+  "text": "0.625",
+  "mean": 0.6254166666666666,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "baseline F1 (ep10-20 평균)",
+  "split": "S1_123",
+  "text": "0.627",
+  "mean": 0.6266999999999999,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "llm F1 (ep10-20 평균)",
+  "split": "S1_1",
+  "text": "0.610",
+  "mean": 0.6095,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "llm F1 (ep10-20 평균)",
+  "split": "S1_12",
+  "text": "0.618",
+  "mean": 0.6182666666666666,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "llm F1 (ep10-20 평균)",
+  "split": "S1_123",
+  "text": "0.634",
+  "mean": 0.6344333333333333,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "name F1 (ep10-20 평균)",
+  "split": "S1_1",
+  "text": "0.601",
+  "mean": 0.6014999999999999,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "name F1 (ep10-20 평균)",
+  "split": "S1_12",
+  "text": "0.623",
+  "mean": 0.6225499999999999,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "name F1 (ep10-20 평균)",
+  "split": "S1_123",
+  "text": "0.629",
+  "mean": 0.6291833333333333,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "baseline 최적 epoch / test acc",
+  "split": "S1_1",
+  "text": "6 / 0.698",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "baseline 최적 epoch / test acc",
+  "split": "S1_12",
+  "text": "20 / 0.748",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "baseline 최적 epoch / test acc",
+  "split": "S1_123",
+  "text": "8 / 0.797",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "llm 최적 epoch / test acc",
+  "split": "S1_1",
+  "text": "16 / 0.719",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "llm 최적 epoch / test acc",
+  "split": "S1_12",
+  "text": "10 / 0.767",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "llm 최적 epoch / test acc",
+  "split": "S1_123",
+  "text": "10 / 0.775",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "name 최적 epoch / test acc",
+  "split": "S1_1",
+  "text": "20 / 0.699",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "name 최적 epoch / test acc",
+  "split": "S1_12",
+  "text": "8 / 0.766",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "0. 성능 (test macro-F1, epoch 10-20 평균) / 검증 최적 epoch",
+  "item": "name 최적 epoch / test acc",
+  "split": "S1_123",
+  "text": "8 / 0.798",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "테스트 쌍",
+  "split": "S1_1",
+  "text": "32,322",
+  "mean": 32322,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "테스트 쌍",
+  "split": "S1_12",
+  "text": "30,731",
+  "mean": 30731,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "테스트 쌍",
+  "split": "S1_123",
+  "text": "32,845",
+  "mean": 32845,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 경로가 있는 쌍",
+  "split": "S1_1",
+  "text": "22,953",
+  "mean": 22953,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 경로가 있는 쌍",
+  "split": "S1_12",
+  "text": "21,196",
+  "mean": 21196,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 경로가 있는 쌍",
+  "split": "S1_123",
+  "text": "22,228",
+  "mean": 22228,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (전체)",
+  "split": "S1_1",
+  "text": "0.889",
+  "mean": 0.8890610660404973,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (전체)",
+  "split": "S1_12",
+  "text": "0.886",
+  "mean": 0.8855935005624077,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (전체)",
+  "split": "S1_123",
+  "text": "0.875",
+  "mean": 0.8751922229538189,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (대사형)",
+  "split": "S1_1",
+  "text": "0.908",
+  "mean": 0.9079526710183534,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (대사형)",
+  "split": "S1_12",
+  "text": "0.889",
+  "mean": 0.8887733788949791,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (대사형)",
+  "split": "S1_123",
+  "text": "0.868",
+  "mean": 0.8676693429714336,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (비PK)",
+  "split": "S1_1",
+  "text": "0.893",
+  "mean": 0.8929446749943014,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (비PK)",
+  "split": "S1_12",
+  "text": "0.889",
+  "mean": 0.8888897591060425,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 비율 (비PK)",
+  "split": "S1_123",
+  "text": "0.871",
+  "mean": 0.870780233039684,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 크기 중앙값",
+  "split": "S1_1",
+  "text": "23.067",
+  "mean": 23.066666666666666,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 크기 중앙값",
+  "split": "S1_12",
+  "text": "20.929",
+  "mean": 20.928571428571427,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 동점 크기 중앙값",
+  "split": "S1_123",
+  "text": "23.000",
+  "mean": 23.0,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 집어낼 확률",
+  "split": "S1_1",
+  "text": "0.170",
+  "mean": 0.17001763466127032,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 집어낼 확률",
+  "split": "S1_12",
+  "text": "0.186",
+  "mean": 0.18571734084231692,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "2-hop 집어낼 확률",
+  "split": "S1_123",
+  "text": "0.192",
+  "mean": 0.19163061184665034,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "3-hop 동점 비율",
+  "split": "S1_1",
+  "text": "0.693",
+  "mean": 0.6926286093008588,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "3-hop 동점 비율",
+  "split": "S1_12",
+  "text": "0.685",
+  "mean": 0.6848139295343517,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "3-hop 동점 비율",
+  "split": "S1_123",
+  "text": "0.707",
+  "mean": 0.7073457963708332,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "3-hop 집어낼 확률",
+  "split": "S1_1",
+  "text": "0.385",
+  "mean": 0.3847147196305956,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "3-hop 집어낼 확률",
+  "split": "S1_12",
+  "text": "0.394",
+  "mean": 0.3942920149398243,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "3-hop 집어낼 확률",
+  "split": "S1_123",
+  "text": "0.374",
+  "mean": 0.3738510885230365,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "대사형 중 결합 유전자 공유",
+  "split": "S1_1",
+  "text": "0.827",
+  "mean": 0.8274738699606352,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "대사형 중 결합 유전자 공유",
+  "split": "S1_12",
+  "text": "0.829",
+  "mean": 0.8289033901002706,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "대사형 중 결합 유전자 공유",
+  "split": "S1_123",
+  "text": "0.823",
+  "mean": 0.8226725775807473,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "대사형 중 CYP 공유",
+  "split": "S1_1",
+  "text": "0.825",
+  "mean": 0.8251662820686847,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "대사형 중 CYP 공유",
+  "split": "S1_12",
+  "text": "0.826",
+  "mean": 0.82572019735795,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "대사형 중 CYP 공유",
+  "split": "S1_123",
+  "text": "0.818",
+  "mean": 0.8183977200759974,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "비PK 중 CYP 공유",
+  "split": "S1_1",
+  "text": "0.233",
+  "mean": 0.2332650641371133,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "비PK 중 CYP 공유",
+  "split": "S1_12",
+  "text": "0.223",
+  "mean": 0.22272632457238214,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "비PK 중 CYP 공유",
+  "split": "S1_123",
+  "text": "0.207",
+  "mean": 0.20734090063267585,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "동점 유전자 중 CYP 비율 (대사형)",
+  "split": "S1_1",
+  "text": "0.902",
+  "mean": 0.9020455954416594,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "동점 유전자 중 CYP 비율 (대사형)",
+  "split": "S1_12",
+  "text": "0.902",
+  "mean": 0.9019422428518362,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "동점 유전자 중 CYP 비율 (대사형)",
+  "split": "S1_123",
+  "text": "0.894",
+  "mean": 0.8937220494174849,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "특정 CYP를 집어낼 확률 (대사형)",
+  "split": "S1_1",
+  "text": "0.531",
+  "mean": 0.5308653793476025,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "특정 CYP를 집어낼 확률 (대사형)",
+  "split": "S1_12",
+  "text": "0.523",
+  "mean": 0.5234716324224352,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "1. 원 구조는 엔티티를 고를 수 없다 (relation_ties.json)",
+  "item": "특정 CYP를 집어낼 확률 (대사형)",
+  "split": "S1_123",
+  "text": "0.528",
+  "mean": 0.5282943906049126,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "전체 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.705 / 0.900 (n=8195)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "전체 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.761 / 0.899 (n=8200)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "전체 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.791 / 0.918 (n=8191)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "대사 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.694 / 0.883 (n=1867)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "대사 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.775 / 0.886 (n=1675)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "대사 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.765 / 0.880 (n=1575)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "기타 PK 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.606 / 0.879 (n=1699)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "기타 PK 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.738 / 0.894 (n=1533)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "기타 PK 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.706 / 0.901 (n=1404)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.615 / 0.901 (n=2115)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.641 / 0.889 (n=2349)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.716 / 0.914 (n=2537)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "불특정 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.856 / 0.925 (n=2514)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "불특정 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.873 / 0.919 (n=2643)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "불특정 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.922 / 0.951 (n=2675)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "CYP 공유 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.617 / 0.877 (n=3657)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "CYP 공유 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.728 / 0.889 (n=3245)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "CYP 공유 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.703 / 0.895 (n=3068)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "공유 없음 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.782 / 0.918 (n=4043)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "공유 없음 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.785 / 0.904 (n=4413)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "공유 없음 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.848 / 0.932 (n=4525)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 적음 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.719 / 0.901 (n=2607)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 적음 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.771 / 0.893 (n=2747)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 적음 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.820 / 0.926 (n=2661)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 중간 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.720 / 0.906 (n=2709)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 중간 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.750 / 0.897 (n=2717)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 중간 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.818 / 0.924 (n=2685)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 많음 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.679 / 0.893 (n=2879)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 많음 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.763 / 0.907 (n=2736)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "KG 많음 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.739 / 0.904 (n=2845)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "대사 & CYP 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.678 / 0.882 (n=1553)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "대사 & CYP 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.774 / 0.884 (n=1418)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "대사 & CYP 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.751 / 0.878 (n=1297)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD & CYP 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.481 / 0.880 (n=501)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD & CYP 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.563 / 0.876 (n=491)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD & CYP 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.556 / 0.898 (n=570)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD & 없음 정확도 / 확신도",
+  "split": "S1_1",
+  "text": "0.668 / 0.909 (n=1426)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD & 없음 정확도 / 확신도",
+  "split": "S1_12",
+  "text": "0.671 / 0.892 (n=1648)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-2. 층별 정확도 / 확신도 (게이트 끈 llm·name 평균, 표본)",
+  "item": "PD & 없음 정확도 / 확신도",
+  "split": "S1_123",
+  "text": "0.773 / 0.920 (n=1774)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: baseline",
+  "split": "S1_1",
+  "text": "0.723",
+  "mean": 0.7231045314300873,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: baseline",
+  "split": "S1_12",
+  "text": "0.696",
+  "mean": 0.696052592155584,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: baseline",
+  "split": "S1_123",
+  "text": "0.734",
+  "mean": 0.734029675162671,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: llm",
+  "split": "S1_1",
+  "text": "0.714",
+  "mean": 0.7140832898843518,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: llm",
+  "split": "S1_12",
+  "text": "0.788",
+  "mean": 0.7884352409765185,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: llm",
+  "split": "S1_123",
+  "text": "0.746",
+  "mean": 0.7463406513963043,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: name",
+  "split": "S1_1",
+  "text": "0.665",
+  "mean": 0.664508478358591,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: name",
+  "split": "S1_12",
+  "text": "0.770",
+  "mean": 0.7701001933084054,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "대사 & CYP: name",
+  "split": "S1_123",
+  "text": "0.766",
+  "mean": 0.7664218597197737,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: baseline",
+  "split": "S1_1",
+  "text": "0.296",
+  "mean": 0.29556543942657254,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: baseline",
+  "split": "S1_12",
+  "text": "0.179",
+  "mean": 0.17862418198739208,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: baseline",
+  "split": "S1_123",
+  "text": "0.242",
+  "mean": 0.24247963944644213,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: llm",
+  "split": "S1_1",
+  "text": "0.270",
+  "mean": 0.2704032100325432,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: llm",
+  "split": "S1_12",
+  "text": "0.200",
+  "mean": 0.19954904261060086,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: llm",
+  "split": "S1_123",
+  "text": "0.282",
+  "mean": 0.2821282400215142,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: name",
+  "split": "S1_1",
+  "text": "0.279",
+  "mean": 0.2791236386141937,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: name",
+  "split": "S1_12",
+  "text": "0.244",
+  "mean": 0.24430779492518123,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & CYP: name",
+  "split": "S1_123",
+  "text": "0.251",
+  "mean": 0.25145593056917415,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: baseline",
+  "split": "S1_1",
+  "text": "0.080",
+  "mean": 0.07963215032929098,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: baseline",
+  "split": "S1_12",
+  "text": "0.025",
+  "mean": 0.024535191490838167,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: baseline",
+  "split": "S1_123",
+  "text": "0.028",
+  "mean": 0.02810962218831545,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: llm",
+  "split": "S1_1",
+  "text": "0.065",
+  "mean": 0.06540613482611375,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: llm",
+  "split": "S1_12",
+  "text": "0.042",
+  "mean": 0.04167351851670924,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: llm",
+  "split": "S1_123",
+  "text": "0.036",
+  "mean": 0.03611890510609783,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: name",
+  "split": "S1_1",
+  "text": "0.073",
+  "mean": 0.07252111693663843,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: name",
+  "split": "S1_12",
+  "text": "0.053",
+  "mean": 0.05273712030112227,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "기타 PK & 없음: name",
+  "split": "S1_123",
+  "text": "0.028",
+  "mean": 0.02810841137052616,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: baseline",
+  "split": "S1_1",
+  "text": "0.153",
+  "mean": 0.15292667865074733,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: baseline",
+  "split": "S1_12",
+  "text": "0.126",
+  "mean": 0.1260477799861422,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: baseline",
+  "split": "S1_123",
+  "text": "0.060",
+  "mean": 0.06011706287676852,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: llm",
+  "split": "S1_1",
+  "text": "0.165",
+  "mean": 0.1645969588427797,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: llm",
+  "split": "S1_12",
+  "text": "0.163",
+  "mean": 0.16316733602112454,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: llm",
+  "split": "S1_123",
+  "text": "0.080",
+  "mean": 0.079883491608742,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: name",
+  "split": "S1_1",
+  "text": "0.133",
+  "mean": 0.13285680660253898,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: name",
+  "split": "S1_12",
+  "text": "0.100",
+  "mean": 0.09995301985969408,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & CYP: name",
+  "split": "S1_123",
+  "text": "0.059",
+  "mean": 0.059220690130836286,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: baseline",
+  "split": "S1_1",
+  "text": "0.026",
+  "mean": 0.025518297275755556,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: baseline",
+  "split": "S1_12",
+  "text": "0.012",
+  "mean": 0.012403121642489995,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: baseline",
+  "split": "S1_123",
+  "text": "0.014",
+  "mean": 0.014452926729247409,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: llm",
+  "split": "S1_1",
+  "text": "0.018",
+  "mean": 0.01807798576447238,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: llm",
+  "split": "S1_12",
+  "text": "0.021",
+  "mean": 0.021180430029537848,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: llm",
+  "split": "S1_123",
+  "text": "0.012",
+  "mean": 0.011917956279656979,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: name",
+  "split": "S1_1",
+  "text": "0.016",
+  "mean": 0.015532453506664585,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: name",
+  "split": "S1_12",
+  "text": "0.019",
+  "mean": 0.019067395471455903,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-3. 대사형으로 예측되는 비율 (전체 KG)",
+  "item": "PD & 없음: name",
+  "split": "S1_123",
+  "text": "0.019",
+  "mean": 0.018769709313293748,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 전체 KG",
+  "split": "S1_1",
+  "text": "0.714",
+  "mean": 0.7135381509354336,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 전체 KG",
+  "split": "S1_12",
+  "text": "0.749",
+  "mean": 0.7491869226359127,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 전체 KG",
+  "split": "S1_123",
+  "text": "0.796",
+  "mean": 0.7959082393148521,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 CYP 지움",
+  "split": "S1_1",
+  "text": "0.662",
+  "mean": 0.6615409015351018,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 CYP 지움",
+  "split": "S1_12",
+  "text": "0.707",
+  "mean": 0.7067435014652378,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 CYP 지움",
+  "split": "S1_123",
+  "text": "0.771",
+  "mean": 0.7706353958721036,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_1",
+  "text": "0.710 / 0.712 / 0.711",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_12",
+  "text": "0.742 / 0.745 / 0.745",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_123",
+  "text": "0.789 / 0.793 / 0.793",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 대사형 dlogp (CYP 지움)",
+  "split": "S1_1",
+  "text": "-1.031 [-1.355, -0.710]*",
+  "mean": -1.0307502997877769,
+  "ci_lo": -1.3552716143396761,
+  "ci_hi": -0.7104932940095761
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 대사형 dlogp (CYP 지움)",
+  "split": "S1_12",
+  "text": "-1.316 [-1.702, -0.978]*",
+  "mean": -1.3159566352252579,
+  "ci_lo": -1.702215145007384,
+  "ci_hi": -0.9775098840228608
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 대사형 dlogp (CYP 지움)",
+  "split": "S1_123",
+  "text": "-0.544 [-0.881, -0.171]*",
+  "mean": -0.5435782107915309,
+  "ci_lo": -0.881185637877213,
+  "ci_hi": -0.1711682997031253
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: PD dlogp",
+  "split": "S1_1",
+  "text": "+0.142 [+0.035, +0.249]*",
+  "mean": 0.14210239233913627,
+  "ci_lo": 0.03527043089710195,
+  "ci_hi": 0.24915703302657316
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: PD dlogp",
+  "split": "S1_12",
+  "text": "+0.199 [+0.028, +0.424]*",
+  "mean": 0.19915378698034908,
+  "ci_lo": 0.0281356390981668,
+  "ci_hi": 0.4239987801297763
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: PD dlogp",
+  "split": "S1_123",
+  "text": "+0.064 [-0.008, +0.137]",
+  "mean": 0.06429024982822996,
+  "ci_lo": -0.008387753028382116,
+  "ci_hi": 0.13699108368886864
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 기타 PK dlogp",
+  "split": "S1_1",
+  "text": "+0.280 [+0.076, +0.443]*",
+  "mean": 0.2798530849935442,
+  "ci_lo": 0.07599747253294144,
+  "ci_hi": 0.4425890672257995
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 기타 PK dlogp",
+  "split": "S1_12",
+  "text": "+0.199 [+0.052, +0.359]*",
+  "mean": 0.19932962564851628,
+  "ci_lo": 0.052314699970776965,
+  "ci_hi": 0.3592707000309335
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 기타 PK dlogp",
+  "split": "S1_123",
+  "text": "+0.432 [+0.155, +0.680]*",
+  "mean": 0.43155180835765355,
+  "ci_lo": 0.1554649089246723,
+  "ci_hi": 0.6798502376783415
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_1",
+  "text": "0.43 -> 0.25",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_12",
+  "text": "0.37 -> 0.22",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_123",
+  "text": "0.39 -> 0.26",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_1",
+  "text": "0.72 -> 0.73",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_12",
+  "text": "0.81 -> 0.87",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_123",
+  "text": "0.80 -> 0.84",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_1",
+  "text": "+0.201 [-0.234, +0.675]",
+  "mean": 0.20115199144429158,
+  "ci_lo": -0.23356273716215195,
+  "ci_hi": 0.6746966236852282
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_12",
+  "text": "-0.017 [-0.258, +0.166]",
+  "mean": -0.016832003735371144,
+  "ci_lo": -0.2584371382442745,
+  "ci_hi": 0.1663911927455925
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "baseline: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_123",
+  "text": "-0.080 [-0.323, +0.148]",
+  "mean": -0.07967812601508228,
+  "ci_lo": -0.32262223462450884,
+  "ci_hi": 0.14848809439347538
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 전체 KG",
+  "split": "S1_1",
+  "text": "0.716",
+  "mean": 0.7161862339432098,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 전체 KG",
+  "split": "S1_12",
+  "text": "0.767",
+  "mean": 0.7665050787515293,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 전체 KG",
+  "split": "S1_123",
+  "text": "0.778",
+  "mean": 0.7780880547695981,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 CYP 지움",
+  "split": "S1_1",
+  "text": "0.645",
+  "mean": 0.6451813672954875,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 CYP 지움",
+  "split": "S1_12",
+  "text": "0.734",
+  "mean": 0.7342925093313238,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 CYP 지움",
+  "split": "S1_123",
+  "text": "0.738",
+  "mean": 0.73755339043995,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_1",
+  "text": "0.702 / 0.709 / 0.709",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_12",
+  "text": "0.762 / 0.764 / 0.764",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_123",
+  "text": "0.770 / 0.774 / 0.774",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp (CYP 지움)",
+  "split": "S1_1",
+  "text": "-1.448 [-1.900, -1.018]*",
+  "mean": -1.4478300812877298,
+  "ci_lo": -1.8999805968989731,
+  "ci_hi": -1.0183115012473398
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp (CYP 지움)",
+  "split": "S1_12",
+  "text": "-0.706 [-0.878, -0.566]*",
+  "mean": -0.7060066399404081,
+  "ci_lo": -0.8780859724670291,
+  "ci_hi": -0.5657045868911968
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp (CYP 지움)",
+  "split": "S1_123",
+  "text": "-1.401 [-1.904, -0.962]*",
+  "mean": -1.4012580498358371,
+  "ci_lo": -1.9042452422176654,
+  "ci_hi": -0.9622238415841994
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: PD dlogp",
+  "split": "S1_1",
+  "text": "+0.268 [+0.158, +0.395]*",
+  "mean": 0.26845712235766167,
+  "ci_lo": 0.15792003749654157,
+  "ci_hi": 0.3952692884684796
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: PD dlogp",
+  "split": "S1_12",
+  "text": "+0.263 [+0.038, +0.610]*",
+  "mean": 0.26307434141161545,
+  "ci_lo": 0.03813327612456799,
+  "ci_hi": 0.6097742258947906
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: PD dlogp",
+  "split": "S1_123",
+  "text": "+0.109 [+0.016, +0.197]*",
+  "mean": 0.10869526536201829,
+  "ci_lo": 0.016013188852705376,
+  "ci_hi": 0.19723486864218018
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 기타 PK dlogp",
+  "split": "S1_1",
+  "text": "+0.201 [-0.044, +0.483]",
+  "mean": 0.20107851279535757,
+  "ci_lo": -0.04439136680980649,
+  "ci_hi": 0.4830622564782933
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 기타 PK dlogp",
+  "split": "S1_12",
+  "text": "+0.158 [-0.009, +0.363]",
+  "mean": 0.15754229890422133,
+  "ci_lo": -0.008765962909976518,
+  "ci_hi": 0.3626599334619738
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 기타 PK dlogp",
+  "split": "S1_123",
+  "text": "+0.286 [+0.023, +0.543]*",
+  "mean": 0.28576010452895423,
+  "ci_lo": 0.022721636422809215,
+  "ci_hi": 0.5433613873869616
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_1",
+  "text": "0.42 -> 0.19",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_12",
+  "text": "0.43 -> 0.30",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_123",
+  "text": "0.40 -> 0.20",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_1",
+  "text": "0.73 -> 0.76",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_12",
+  "text": "0.81 -> 0.84",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_123",
+  "text": "0.79 -> 0.87",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_1",
+  "text": "-0.014 [-0.354, +0.335]",
+  "mean": -0.01395350924660914,
+  "ci_lo": -0.35444159847712337,
+  "ci_hi": 0.3353461693060252
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_12",
+  "text": "+0.196 [-0.103, +0.590]",
+  "mean": 0.1964736763035003,
+  "ci_lo": -0.10346225552437205,
+  "ci_hi": 0.5899179728683188
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_123",
+  "text": "+0.061 [-0.171, +0.340]",
+  "mean": 0.061327512419732326,
+  "ci_lo": -0.1714360788244911,
+  "ci_hi": 0.33950128084865716
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 전체 KG",
+  "split": "S1_1",
+  "text": "0.695",
+  "mean": 0.6954902622576785,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 전체 KG",
+  "split": "S1_12",
+  "text": "0.763",
+  "mean": 0.7627745006663893,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 전체 KG",
+  "split": "S1_123",
+  "text": "0.798",
+  "mean": 0.7981678236764614,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 CYP 지움",
+  "split": "S1_1",
+  "text": "0.659",
+  "mean": 0.6588763129879384,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 CYP 지움",
+  "split": "S1_12",
+  "text": "0.731",
+  "mean": 0.731152814736045,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 CYP 지움",
+  "split": "S1_123",
+  "text": "0.762",
+  "mean": 0.7620143004749698,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_1",
+  "text": "0.692 / 0.694 / 0.694",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_12",
+  "text": "0.755 / 0.761 / 0.760",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 정확도 대조 지움 (hub / rand0 / rand1)",
+  "split": "S1_123",
+  "text": "0.794 / 0.797 / 0.796",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp (CYP 지움)",
+  "split": "S1_1",
+  "text": "-1.219 [-1.736, -0.736]*",
+  "mean": -1.2191739866603035,
+  "ci_lo": -1.7361439269249053,
+  "ci_hi": -0.7358273726262122
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp (CYP 지움)",
+  "split": "S1_12",
+  "text": "-0.902 [-1.183, -0.645]*",
+  "mean": -0.9020403347292139,
+  "ci_lo": -1.1832674224469908,
+  "ci_hi": -0.6445314912197626
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp (CYP 지움)",
+  "split": "S1_123",
+  "text": "-0.729 [-1.095, -0.362]*",
+  "mean": -0.7290502599808131,
+  "ci_lo": -1.0947628519970771,
+  "ci_hi": -0.36196272253050105
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: PD dlogp",
+  "split": "S1_1",
+  "text": "+0.269 [+0.088, +0.525]*",
+  "mean": 0.26918223428915455,
+  "ci_lo": 0.08820090776099539,
+  "ci_hi": 0.5245711846359813
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: PD dlogp",
+  "split": "S1_12",
+  "text": "+0.226 [-0.027, +0.598]",
+  "mean": 0.2262299878832863,
+  "ci_lo": -0.02676567859843358,
+  "ci_hi": 0.5975643810568698
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: PD dlogp",
+  "split": "S1_123",
+  "text": "+0.047 [-0.006, +0.103]",
+  "mean": 0.047183752982265924,
+  "ci_lo": -0.006286548246026445,
+  "ci_hi": 0.10309749153495266
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 기타 PK dlogp",
+  "split": "S1_1",
+  "text": "+0.384 [+0.166, +0.618]*",
+  "mean": 0.3840952925495498,
+  "ci_lo": 0.16607860478926045,
+  "ci_hi": 0.6176810025766395
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 기타 PK dlogp",
+  "split": "S1_12",
+  "text": "+0.214 [+0.037, +0.415]*",
+  "mean": 0.2138900526038732,
+  "ci_lo": 0.03697568360965493,
+  "ci_hi": 0.4152178454424558
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 기타 PK dlogp",
+  "split": "S1_123",
+  "text": "+0.237 [+0.068, +0.387]*",
+  "mean": 0.23732712364635733,
+  "ci_lo": 0.06794732226802214,
+  "ci_hi": 0.3866171022734644
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_1",
+  "text": "0.39 -> 0.24",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_12",
+  "text": "0.42 -> 0.29",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: CYP 공유 쌍 대사형 예측 비율 전 -> 후",
+  "split": "S1_123",
+  "text": "0.40 -> 0.25",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_1",
+  "text": "0.72 -> 0.76",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_12",
+  "text": "0.81 -> 0.86",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 그 예측의 정밀도 전 -> 후",
+  "split": "S1_123",
+  "text": "0.81 -> 0.83",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_1",
+  "text": "+0.237 [-0.195, +0.737]",
+  "mean": 0.23690501611616432,
+  "ci_lo": -0.1947594699969919,
+  "ci_hi": 0.7366159329463167
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_12",
+  "text": "+0.197 [-0.066, +0.549]",
+  "mean": 0.1970185255776444,
+  "ci_lo": -0.06604099970301273,
+  "ci_hi": 0.548681337626642
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 공유 수용체를 잃은 PD 쌍 dlogp (hub)",
+  "split": "S1_123",
+  "text": "+0.092 [-0.171, +0.447]",
+  "mean": 0.09232526728058146,
+  "ci_lo": -0.1708808337451082,
+  "ci_hi": 0.44670196462524936
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp, 게이트 끈 모델",
+  "split": "S1_1",
+  "text": "-1.355 [-1.743, -0.983]*",
+  "mean": -1.3553846696219376,
+  "ci_lo": -1.7434364476131594,
+  "ci_hi": -0.9829861470047596
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp, 게이트 끈 모델",
+  "split": "S1_12",
+  "text": "-0.707 [-0.892, -0.537]*",
+  "mean": -0.7074267284621253,
+  "ci_lo": -0.8916978403533652,
+  "ci_hi": -0.5374140598336167
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp, 게이트 끈 모델",
+  "split": "S1_123",
+  "text": "-1.397 [-1.885, -0.949]*",
+  "mean": -1.397464895989048,
+  "ci_lo": -1.8850878487311067,
+  "ci_hi": -0.9493470759140784
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp 게이트 on - off",
+  "split": "S1_1",
+  "text": "-0.092 [-0.189, +0.002]",
+  "mean": -0.09244541166579254,
+  "ci_lo": -0.18904692737936324,
+  "ci_hi": 0.0023691651852748084
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp 게이트 on - off",
+  "split": "S1_12",
+  "text": "+0.001 [-0.045, +0.053]",
+  "mean": 0.001420088521717167,
+  "ci_lo": -0.04541635732180149,
+  "ci_hi": 0.053340808353422614
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "llm: 대사형 dlogp 게이트 on - off",
+  "split": "S1_123",
+  "text": "-0.004 [-0.113, +0.121]",
+  "mean": -0.0037931538467887264,
+  "ci_lo": -0.11288246574093115,
+  "ci_hi": 0.1206552146079484
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp, 게이트 끈 모델",
+  "split": "S1_1",
+  "text": "-1.119 [-1.613, -0.696]*",
+  "mean": -1.1187880544808104,
+  "ci_lo": -1.6133542842436468,
+  "ci_hi": -0.6958329083329989
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp, 게이트 끈 모델",
+  "split": "S1_12",
+  "text": "-0.823 [-1.109, -0.577]*",
+  "mean": -0.823258454298992,
+  "ci_lo": -1.1085989160810241,
+  "ci_hi": -0.5771640570898325
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp, 게이트 끈 모델",
+  "split": "S1_123",
+  "text": "-0.692 [-1.028, -0.362]*",
+  "mean": -0.6921566462078459,
+  "ci_lo": -1.0276882202995297,
+  "ci_hi": -0.3624391122411905
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp 게이트 on - off",
+  "split": "S1_1",
+  "text": "-0.100 [-0.223, +0.025]",
+  "mean": -0.10038593217949306,
+  "ci_lo": -0.2230532756180841,
+  "ci_hi": 0.025311433630747237
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp 게이트 on - off",
+  "split": "S1_12",
+  "text": "-0.079 [-0.142, -0.027]*",
+  "mean": -0.0787818804302218,
+  "ci_lo": -0.14207282036457944,
+  "ci_hi": -0.02712321983747909
+ },
+ {
+  "chapter": "2-4. CYP 엣지를 지우면 (F4)",
+  "item": "name: 대사형 dlogp 게이트 on - off",
+  "split": "S1_123",
+  "text": "-0.037 [-0.092, +0.021]",
+  "mean": -0.03689361377296727,
+  "ci_lo": -0.09158353685123145,
+  "ci_hi": 0.021049716084992218
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "baseline: 0% / 50% / 90% / 100%",
+  "split": "S1_1",
+  "text": "0.714 / 0.667 / 0.451 / 0.310",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "baseline: 0% / 50% / 90% / 100%",
+  "split": "S1_12",
+  "text": "0.749 / 0.704 / 0.518 / 0.384",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "baseline: 0% / 50% / 90% / 100%",
+  "split": "S1_123",
+  "text": "0.796 / 0.736 / 0.539 / 0.396",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "llm: 0% / 50% / 90% / 100%",
+  "split": "S1_1",
+  "text": "0.716 / 0.659 / 0.470 / 0.371",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "llm: 0% / 50% / 90% / 100%",
+  "split": "S1_12",
+  "text": "0.767 / 0.721 / 0.562 / 0.462",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "llm: 0% / 50% / 90% / 100%",
+  "split": "S1_123",
+  "text": "0.778 / 0.689 / 0.437 / 0.300",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "name: 0% / 50% / 90% / 100%",
+  "split": "S1_1",
+  "text": "0.695 / 0.647 / 0.485 / 0.376",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "name: 0% / 50% / 90% / 100%",
+  "split": "S1_12",
+  "text": "0.763 / 0.721 / 0.561 / 0.447",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "name: 0% / 50% / 90% / 100%",
+  "split": "S1_123",
+  "text": "0.798 / 0.746 / 0.574 / 0.432",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "KG 없는 기준선 (기존 약의 최빈 타입)",
+  "split": "S1_1",
+  "text": "0.529",
+  "mean": 0.5292682770840675,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "KG 없는 기준선 (기존 약의 최빈 타입)",
+  "split": "S1_12",
+  "text": "0.557",
+  "mean": 0.5570662263921069,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "KG 없는 기준선 (기존 약의 최빈 타입)",
+  "split": "S1_123",
+  "text": "0.543",
+  "mean": 0.5434641582509901,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "llm - name 정확도 하락 차이 (90%)",
+  "split": "S1_1",
+  "text": "-0.036 [-0.065, -0.008]*",
+  "mean": -0.03595786780583823,
+  "ci_lo": -0.06458546553113176,
+  "ci_hi": -0.007999696880373844
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "llm - name 정확도 하락 차이 (90%)",
+  "split": "S1_12",
+  "text": "-0.003 [-0.029, +0.019]",
+  "mean": -0.0027478735016849827,
+  "ci_lo": -0.02940660763660631,
+  "ci_hi": 0.0193893463809042
+ },
+ {
+  "chapter": "2-5. 새 약 KG를 지우면 (M1): 정확도",
+  "item": "llm - name 정확도 하락 차이 (90%)",
+  "split": "S1_123",
+  "text": "-0.117 [-0.155, -0.079]*",
+  "mean": -0.1171684823493407,
+  "ci_lo": -0.15534627253153316,
+  "ci_hi": -0.07889669945519577
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "공유 이웃 구간 경계 a, b (np.digitize: 적음 < a <= 중간 < b <= 많음)",
+  "split": "S1_1",
+  "text": "1, 29",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "공유 이웃 구간 경계 a, b (np.digitize: 적음 < a <= 중간 < b <= 많음)",
+  "split": "S1_12",
+  "text": "1, 25",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "공유 이웃 구간 경계 a, b (np.digitize: 적음 < a <= 중간 < b <= 많음)",
+  "split": "S1_123",
+  "text": "1, 27",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 정확도 적음 / 중간 / 많음",
+  "split": "S1_1",
+  "text": "0.808 / 0.694 / 0.662",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 정확도 적음 / 중간 / 많음",
+  "split": "S1_12",
+  "text": "0.822 / 0.760 / 0.723",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 정확도 적음 / 중간 / 많음",
+  "split": "S1_123",
+  "text": "0.835 / 0.794 / 0.709",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 확신도 적음 / 중간 / 많음",
+  "split": "S1_1",
+  "text": "0.923 / 0.892 / 0.882",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 확신도 적음 / 중간 / 많음",
+  "split": "S1_12",
+  "text": "0.920 / 0.887 / 0.881",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 확신도 적음 / 중간 / 많음",
+  "split": "S1_123",
+  "text": "0.930 / 0.919 / 0.888",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 정확도 차이 (적음 - 많음)",
+  "split": "S1_1",
+  "text": "+0.145 [+0.094, +0.199]*",
+  "mean": 0.145365117680471,
+  "ci_lo": 0.09355612261764934,
+  "ci_hi": 0.199312873444471
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 정확도 차이 (적음 - 많음)",
+  "split": "S1_12",
+  "text": "+0.099 [+0.048, +0.151]*",
+  "mean": 0.09913164558330789,
+  "ci_lo": 0.047978320091089904,
+  "ci_hi": 0.15115795347741537
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 정확도 차이 (적음 - 많음)",
+  "split": "S1_123",
+  "text": "+0.127 [+0.070, +0.180]*",
+  "mean": 0.1266433338334293,
+  "ci_lo": 0.07006597004041613,
+  "ci_hi": 0.17986259744415978
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 과신(확신도-정확도) 차이 (적음 - 많음), 보정 전",
+  "split": "S1_1",
+  "text": "-0.104 [-0.150, -0.062]*",
+  "mean": -0.10448422323289808,
+  "ci_lo": -0.1498772083850362,
+  "ci_hi": -0.062215417861844854
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 과신(확신도-정확도) 차이 (적음 - 많음), 보정 전",
+  "split": "S1_12",
+  "text": "-0.060 [-0.104, -0.018]*",
+  "mean": -0.06009520910502952,
+  "ci_lo": -0.1037720978134743,
+  "ci_hi": -0.01849572123887764
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 과신(확신도-정확도) 차이 (적음 - 많음), 보정 전",
+  "split": "S1_123",
+  "text": "-0.084 [-0.129, -0.037]*",
+  "mean": -0.08421908363998787,
+  "ci_lo": -0.1292199249570905,
+  "ci_hi": -0.037485560070791395
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 같은 값, temperature scaling 후",
+  "split": "S1_1",
+  "text": "-0.079 [-0.125, -0.039]*",
+  "mean": -0.07943551864581722,
+  "ci_lo": -0.12478862937436123,
+  "ci_hi": -0.03874463343968586
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 같은 값, temperature scaling 후",
+  "split": "S1_12",
+  "text": "-0.033 [-0.078, +0.007]",
+  "mean": -0.033138436370305446,
+  "ci_lo": -0.0783085700395892,
+  "ci_hi": 0.006569899312167047
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "llm: 같은 값, temperature scaling 후",
+  "split": "S1_123",
+  "text": "-0.066 [-0.114, -0.022]*",
+  "mean": -0.06643608544705659,
+  "ci_lo": -0.11384324112677181,
+  "ci_hi": -0.022133674046702707
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 정확도 적음 / 중간 / 많음",
+  "split": "S1_1",
+  "text": "0.793 / 0.671 / 0.639",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 정확도 적음 / 중간 / 많음",
+  "split": "S1_12",
+  "text": "0.827 / 0.757 / 0.709",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 정확도 적음 / 중간 / 많음",
+  "split": "S1_123",
+  "text": "0.867 / 0.811 / 0.720",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 확신도 적음 / 중간 / 많음",
+  "split": "S1_1",
+  "text": "0.921 / 0.893 / 0.884",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 확신도 적음 / 중간 / 많음",
+  "split": "S1_12",
+  "text": "0.925 / 0.900 / 0.889",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 확신도 적음 / 중간 / 많음",
+  "split": "S1_123",
+  "text": "0.930 / 0.927 / 0.899",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 정확도 차이 (적음 - 많음)",
+  "split": "S1_1",
+  "text": "+0.154 [+0.100, +0.203]*",
+  "mean": 0.1538187035873787,
+  "ci_lo": 0.10009603602704475,
+  "ci_hi": 0.20338557592051398
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 정확도 차이 (적음 - 많음)",
+  "split": "S1_12",
+  "text": "+0.118 [+0.062, +0.175]*",
+  "mean": 0.11818744635625178,
+  "ci_lo": 0.061880455077024374,
+  "ci_hi": 0.17498462326634007
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 정확도 차이 (적음 - 많음)",
+  "split": "S1_123",
+  "text": "+0.147 [+0.090, +0.204]*",
+  "mean": 0.14671431065334217,
+  "ci_lo": 0.08999450549583887,
+  "ci_hi": 0.20356237739462352
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 과신(확신도-정확도) 차이 (적음 - 많음), 보정 전",
+  "split": "S1_1",
+  "text": "-0.117 [-0.159, -0.073]*",
+  "mean": -0.11702577480502652,
+  "ci_lo": -0.15946545787619812,
+  "ci_hi": -0.07334624418934105
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 과신(확신도-정확도) 차이 (적음 - 많음), 보정 전",
+  "split": "S1_12",
+  "text": "-0.082 [-0.129, -0.037]*",
+  "mean": -0.08225681954977437,
+  "ci_lo": -0.12876360931982542,
+  "ci_hi": -0.03670239861891526
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 과신(확신도-정확도) 차이 (적음 - 많음), 보정 전",
+  "split": "S1_123",
+  "text": "-0.116 [-0.164, -0.068]*",
+  "mean": -0.11552294810552532,
+  "ci_lo": -0.16375248069169523,
+  "ci_hi": -0.0675044609393547
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 같은 값, temperature scaling 후",
+  "split": "S1_1",
+  "text": "-0.085 [-0.128, -0.042]*",
+  "mean": -0.08523157923284586,
+  "ci_lo": -0.1275141575497168,
+  "ci_hi": -0.041828803314003675
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 같은 값, temperature scaling 후",
+  "split": "S1_12",
+  "text": "-0.062 [-0.112, -0.017]*",
+  "mean": -0.0621120547573194,
+  "ci_lo": -0.11193346175499935,
+  "ci_hi": -0.016572041675607465
+ },
+ {
+  "chapter": "2-6. 공유 이웃이 많을수록 과신하는가 (kg_calibration.json, 게이트 모델)",
+  "item": "name: 같은 값, temperature scaling 후",
+  "split": "S1_123",
+  "text": "-0.097 [-0.149, -0.048]*",
+  "mean": -0.09716583142752067,
+  "ci_lo": -0.1489408745364995,
+  "ci_hi": -0.048208381969730214
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 정확도 original / off / mean / shuffle_all / shuffle_type / key_perm",
+  "split": "S1_1",
+  "text": "0.716 / 0.709 / 0.711 / 0.707 / 0.714 / 0.714",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 정확도 original / off / mean / shuffle_all / shuffle_type / key_perm",
+  "split": "S1_12",
+  "text": "0.767 / 0.764 / 0.763 / 0.761 / 0.763 / 0.763",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 정확도 original / off / mean / shuffle_all / shuffle_type / key_perm",
+  "split": "S1_123",
+  "text": "0.778 / 0.782 / 0.782 / 0.776 / 0.774 / 0.777",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 정확도 original / off / mean / shuffle_all / shuffle_type / key_perm",
+  "split": "S1_1",
+  "text": "0.695 / 0.701 / 0.700 / 0.698 / 0.702 / 0.695",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 정확도 original / off / mean / shuffle_all / shuffle_type / key_perm",
+  "split": "S1_12",
+  "text": "0.763 / 0.759 / 0.759 / 0.756 / 0.761 / 0.759",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 정확도 original / off / mean / shuffle_all / shuffle_type / key_perm",
+  "split": "S1_123",
+  "text": "0.798 / 0.800 / 0.801 / 0.792 / 0.794 / 0.795",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F2 key_perm dlogp (대사형)",
+  "split": "S1_1",
+  "text": "-0.057 [-0.105, -0.010]*",
+  "mean": -0.057006835749713804,
+  "ci_lo": -0.10549332123564918,
+  "ci_hi": -0.009715486309750202
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F2 key_perm dlogp (대사형)",
+  "split": "S1_12",
+  "text": "-0.034 [-0.062, -0.009]*",
+  "mean": -0.03394380716167761,
+  "ci_lo": -0.06185419983581562,
+  "ci_hi": -0.009078157124979173
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F2 key_perm dlogp (대사형)",
+  "split": "S1_123",
+  "text": "+0.004 [-0.147, +0.140]",
+  "mean": 0.0036556066109091137,
+  "ci_lo": -0.1467309510641495,
+  "ci_hi": 0.14046478653565728
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F2 key_perm dlogp (비PK)",
+  "split": "S1_1",
+  "text": "+0.009 [-0.024, +0.043]",
+  "mean": 0.008681688006944844,
+  "ci_lo": -0.023943265669349005,
+  "ci_hi": 0.04326240560511519
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F2 key_perm dlogp (비PK)",
+  "split": "S1_12",
+  "text": "+0.022 [-0.017, +0.070]",
+  "mean": 0.021669881437224953,
+  "ci_lo": -0.01706805753676056,
+  "ci_hi": 0.06965506775325857
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F2 key_perm dlogp (비PK)",
+  "split": "S1_123",
+  "text": "-0.041 [-0.083, -0.003]*",
+  "mean": -0.040928593656168875,
+  "ci_lo": -0.0834152659705158,
+  "ci_hi": -0.0033559661276931865
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm / off 때 예측이 바뀐 비율 (대사형)",
+  "split": "S1_1",
+  "text": "6.2% / 5.9%",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm / off 때 예측이 바뀐 비율 (대사형)",
+  "split": "S1_12",
+  "text": "5.2% / 5.0%",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm / off 때 예측이 바뀐 비율 (대사형)",
+  "split": "S1_123",
+  "text": "11.6% / 9.1%",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm - off (대사형)",
+  "split": "S1_1",
+  "text": "-0.087 [-0.142, -0.040]*",
+  "mean": -0.08669770677460596,
+  "ci_lo": -0.14186762615843618,
+  "ci_hi": -0.040448665509376154
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm - off (대사형)",
+  "split": "S1_12",
+  "text": "-0.068 [-0.132, -0.005]*",
+  "mean": -0.06757985947421569,
+  "ci_lo": -0.13221321102246344,
+  "ci_hi": -0.005210855942411208
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm - off (대사형)",
+  "split": "S1_123",
+  "text": "-0.078 [-0.133, -0.025]*",
+  "mean": -0.07784847554940333,
+  "ci_lo": -0.13267537838671659,
+  "ci_hi": -0.025305643425268188
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: shuffle_all - off (대사형)",
+  "split": "S1_1",
+  "text": "-0.075 [-0.105, -0.047]*",
+  "mean": -0.07509479989096952,
+  "ci_lo": -0.1054222346879965,
+  "ci_hi": -0.046885772510614855
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: shuffle_all - off (대사형)",
+  "split": "S1_12",
+  "text": "-0.056 [-0.075, -0.039]*",
+  "mean": -0.0557938895886813,
+  "ci_lo": -0.07518981444211142,
+  "ci_hi": -0.039152327324887666
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: shuffle_all - off (대사형)",
+  "split": "S1_123",
+  "text": "-0.114 [-0.153, -0.072]*",
+  "mean": -0.11382050909875487,
+  "ci_lo": -0.1528063596525082,
+  "ci_hi": -0.0717812863009042
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: mean - off (대사형)",
+  "split": "S1_1",
+  "text": "+0.001 [-0.016, +0.018]",
+  "mean": 0.0011701643019827233,
+  "ci_lo": -0.015688379536638975,
+  "ci_hi": 0.017762707138411826
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: mean - off (대사형)",
+  "split": "S1_12",
+  "text": "-0.008 [-0.014, -0.001]*",
+  "mean": -0.0075176691088365616,
+  "ci_lo": -0.014475689625800144,
+  "ci_hi": -0.0012051048906273826
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: mean - off (대사형)",
+  "split": "S1_123",
+  "text": "-0.011 [-0.027, +0.004]",
+  "mean": -0.011324262106187932,
+  "ci_lo": -0.02737421997317336,
+  "ci_hi": 0.004094711072894284
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F1 KL(같은 타입) - KL(무작위) (대사형)",
+  "split": "S1_1",
+  "text": "-0.013 [-0.022, -0.005]*",
+  "mean": -0.01316873378437112,
+  "ci_lo": -0.021619128322196184,
+  "ci_hi": -0.0052839656103152
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F1 KL(같은 타입) - KL(무작위) (대사형)",
+  "split": "S1_12",
+  "text": "-0.010 [-0.023, -0.001]*",
+  "mean": -0.010430865760665698,
+  "ci_lo": -0.022672431238809205,
+  "ci_hi": -0.0006334586237376512
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F1 KL(같은 타입) - KL(무작위) (대사형)",
+  "split": "S1_123",
+  "text": "-0.031 [-0.070, +0.001]",
+  "mean": -0.031036284531612692,
+  "ci_lo": -0.07025374225922919,
+  "ci_hi": 0.0013073119885610458
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F1 (비PK)",
+  "split": "S1_1",
+  "text": "-0.004 [-0.009, +0.001]",
+  "mean": -0.003800815706511281,
+  "ci_lo": -0.009436941421430048,
+  "ci_hi": 0.0011380151810560747
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F1 (비PK)",
+  "split": "S1_12",
+  "text": "-0.002 [-0.009, +0.007]",
+  "mean": -0.002286957389271085,
+  "ci_lo": -0.009032234767959172,
+  "ci_hi": 0.006630224995387123
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: F1 (비PK)",
+  "split": "S1_123",
+  "text": "-0.003 [-0.010, +0.003]",
+  "mean": -0.003060461417749106,
+  "ci_lo": -0.010097449965099656,
+  "ci_hi": 0.0032561888798128503
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 대사형 & CYP 공유",
+  "split": "S1_1",
+  "text": "-0.061 [-0.105, -0.017]*",
+  "mean": -0.060873107830271514,
+  "ci_lo": -0.10508575758373159,
+  "ci_hi": -0.017485674805722145
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 대사형 & CYP 공유",
+  "split": "S1_12",
+  "text": "-0.043 [-0.075, -0.015]*",
+  "mean": -0.042967807937699325,
+  "ci_lo": -0.07465133588564409,
+  "ci_hi": -0.014603932558665503
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 대사형 & CYP 공유",
+  "split": "S1_123",
+  "text": "-0.005 [-0.167, +0.145]",
+  "mean": -0.004530689360819819,
+  "ci_lo": -0.16712117996013962,
+  "ci_hi": 0.14453767004661938
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 비PK & CYP 공유",
+  "split": "S1_1",
+  "text": "+0.053 [+0.013, +0.100]*",
+  "mean": 0.05312603743208358,
+  "ci_lo": 0.01349528151842556,
+  "ci_hi": 0.100320978226749
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 비PK & CYP 공유",
+  "split": "S1_12",
+  "text": "+0.002 [-0.061, +0.061]",
+  "mean": 0.002383016044952628,
+  "ci_lo": -0.06113332310903224,
+  "ci_hi": 0.06103518146698322
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 비PK & CYP 공유",
+  "split": "S1_123",
+  "text": "-0.099 [-0.208, +0.005]",
+  "mean": -0.09906343066187205,
+  "ci_lo": -0.20778232043340822,
+  "ci_hi": 0.005037443211344977
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 타입 46",
+  "split": "S1_1",
+  "text": "-0.072 [-0.122, -0.034]*",
+  "mean": -0.07197498755377182,
+  "ci_lo": -0.12175123761101933,
+  "ci_hi": -0.03363263008276092
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 타입 46",
+  "split": "S1_12",
+  "text": "-0.040 [-0.067, -0.013]*",
+  "mean": -0.039942392805013376,
+  "ci_lo": -0.06740157435412195,
+  "ci_hi": -0.013467836777518952
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: key_perm, 타입 46",
+  "split": "S1_123",
+  "text": "-0.006 [-0.146, +0.140]",
+  "mean": -0.005902040024093815,
+  "ci_lo": -0.14617850994421966,
+  "ci_hi": 0.13954969638258535
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득 NLL(off)-NLL(original), 대사 & CYP",
+  "split": "S1_1",
+  "text": "-0.040 [-0.111, +0.025]",
+  "mean": -0.03967707350206559,
+  "ci_lo": -0.11068346305932192,
+  "ci_hi": 0.025381901643909823
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득 NLL(off)-NLL(original), 대사 & CYP",
+  "split": "S1_12",
+  "text": "-0.034 [-0.104, +0.028]",
+  "mean": -0.03388385854439772,
+  "ci_lo": -0.10438162367086382,
+  "ci_hi": 0.028349919731174126
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득 NLL(off)-NLL(original), 대사 & CYP",
+  "split": "S1_123",
+  "text": "-0.085 [-0.202, +0.034]",
+  "mean": -0.08451336145841257,
+  "ci_lo": -0.20226496981010608,
+  "ci_hi": 0.03368137795138739
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득, 전체",
+  "split": "S1_1",
+  "text": "-0.024 [-0.060, +0.010]",
+  "mean": -0.0242906014534139,
+  "ci_lo": -0.05975831490876996,
+  "ci_hi": 0.009952445180066147
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득, 전체",
+  "split": "S1_12",
+  "text": "-0.003 [-0.033, +0.026]",
+  "mean": -0.0031645078749683634,
+  "ci_lo": -0.032782319903857486,
+  "ci_hi": 0.026154864702548176
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득, 전체",
+  "split": "S1_123",
+  "text": "+0.002 [-0.039, +0.043]",
+  "mean": 0.0018166656038107298,
+  "ci_lo": -0.039393765573535654,
+  "ci_hi": 0.04322821709429786
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F2 key_perm dlogp (대사형)",
+  "split": "S1_1",
+  "text": "-0.079 [-0.152, -0.031]*",
+  "mean": -0.07943954266105102,
+  "ci_lo": -0.15216386063543488,
+  "ci_hi": -0.03125442812093987
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F2 key_perm dlogp (대사형)",
+  "split": "S1_12",
+  "text": "-0.133 [-0.186, -0.076]*",
+  "mean": -0.13334827441218225,
+  "ci_lo": -0.1859742195023541,
+  "ci_hi": -0.07589238172871215
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F2 key_perm dlogp (대사형)",
+  "split": "S1_123",
+  "text": "-0.019 [-0.050, +0.009]",
+  "mean": -0.01873960140811909,
+  "ci_lo": -0.05016007683068274,
+  "ci_hi": 0.008508958098930356
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F2 key_perm dlogp (비PK)",
+  "split": "S1_1",
+  "text": "+0.020 [-0.018, +0.070]",
+  "mean": 0.020061677319333608,
+  "ci_lo": -0.018345550504678145,
+  "ci_hi": 0.07034348061241999
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F2 key_perm dlogp (비PK)",
+  "split": "S1_12",
+  "text": "+0.018 [-0.040, +0.106]",
+  "mean": 0.01761409394784968,
+  "ci_lo": -0.03986544762180642,
+  "ci_hi": 0.1062162518584598
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F2 key_perm dlogp (비PK)",
+  "split": "S1_123",
+  "text": "+0.009 [-0.000, +0.019]",
+  "mean": 0.009019279467756212,
+  "ci_lo": -0.0002296478799574785,
+  "ci_hi": 0.018964520644200736
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm / off 때 예측이 바뀐 비율 (대사형)",
+  "split": "S1_1",
+  "text": "4.7% / 7.4%",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm / off 때 예측이 바뀐 비율 (대사형)",
+  "split": "S1_12",
+  "text": "6.1% / 4.8%",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm / off 때 예측이 바뀐 비율 (대사형)",
+  "split": "S1_123",
+  "text": "2.6% / 6.2%",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm - off (대사형)",
+  "split": "S1_1",
+  "text": "-0.023 [-0.152, +0.125]",
+  "mean": -0.02287762921688986,
+  "ci_lo": -0.15182241760328358,
+  "ci_hi": 0.12505734246614872
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm - off (대사형)",
+  "split": "S1_12",
+  "text": "-0.120 [-0.164, -0.084]*",
+  "mean": -0.12033553680228751,
+  "ci_lo": -0.1636457228229603,
+  "ci_hi": -0.08397348878226861
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm - off (대사형)",
+  "split": "S1_123",
+  "text": "-0.037 [-0.135, +0.069]",
+  "mean": -0.03688133626891869,
+  "ci_lo": -0.13451007110756644,
+  "ci_hi": 0.06886203728623866
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: shuffle_all - off (대사형)",
+  "split": "S1_1",
+  "text": "-0.003 [-0.053, +0.050]",
+  "mean": -0.003189659452401075,
+  "ci_lo": -0.05312395576005488,
+  "ci_hi": 0.04954481591689527
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: shuffle_all - off (대사형)",
+  "split": "S1_12",
+  "text": "-0.035 [-0.056, -0.016]*",
+  "mean": -0.035073583545801146,
+  "ci_lo": -0.055856242678606595,
+  "ci_hi": -0.01630526104836462
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: shuffle_all - off (대사형)",
+  "split": "S1_123",
+  "text": "-0.033 [-0.074, +0.011]",
+  "mean": -0.03300769555812128,
+  "ci_lo": -0.07389032596574813,
+  "ci_hi": 0.010558013069371416
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: mean - off (대사형)",
+  "split": "S1_1",
+  "text": "+0.049 [+0.016, +0.080]*",
+  "mean": 0.048710199361520254,
+  "ci_lo": 0.015593596137063096,
+  "ci_hi": 0.08015018717946082
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: mean - off (대사형)",
+  "split": "S1_12",
+  "text": "+0.018 [+0.007, +0.028]*",
+  "mean": 0.01774459808177709,
+  "ci_lo": 0.007445141892031017,
+  "ci_hi": 0.02810286540264433
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: mean - off (대사형)",
+  "split": "S1_123",
+  "text": "+0.003 [-0.016, +0.028]",
+  "mean": 0.0034436886843164792,
+  "ci_lo": -0.016362573068186424,
+  "ci_hi": 0.02750968866677275
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F1 KL(같은 타입) - KL(무작위) (대사형)",
+  "split": "S1_1",
+  "text": "-0.029 [-0.044, -0.015]*",
+  "mean": -0.029034744840078126,
+  "ci_lo": -0.043813619674550226,
+  "ci_hi": -0.014832106037756471
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F1 KL(같은 타입) - KL(무작위) (대사형)",
+  "split": "S1_12",
+  "text": "-0.002 [-0.012, +0.008]",
+  "mean": -0.0022943077031439747,
+  "ci_lo": -0.011670042307022866,
+  "ci_hi": 0.008036449834905668
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F1 KL(같은 타입) - KL(무작위) (대사형)",
+  "split": "S1_123",
+  "text": "-0.007 [-0.016, +0.002]",
+  "mean": -0.007038577515448531,
+  "ci_lo": -0.0157799143480007,
+  "ci_hi": 0.002157881305727942
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F1 (비PK)",
+  "split": "S1_1",
+  "text": "-0.008 [-0.024, +0.004]",
+  "mean": -0.008469082313923158,
+  "ci_lo": -0.023677840183550118,
+  "ci_hi": 0.003541632684221542
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F1 (비PK)",
+  "split": "S1_12",
+  "text": "-0.011 [-0.018, -0.004]*",
+  "mean": -0.010707406941434863,
+  "ci_lo": -0.01813594234609775,
+  "ci_hi": -0.004321791141709703
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: F1 (비PK)",
+  "split": "S1_123",
+  "text": "-0.006 [-0.012, +0.000]",
+  "mean": -0.005558471254480232,
+  "ci_lo": -0.011829946689996436,
+  "ci_hi": 0.00035538833053801205
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 대사형 & CYP 공유",
+  "split": "S1_1",
+  "text": "-0.078 [-0.135, -0.031]*",
+  "mean": -0.07776695080599494,
+  "ci_lo": -0.1352246861953879,
+  "ci_hi": -0.031398098003054674
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 대사형 & CYP 공유",
+  "split": "S1_12",
+  "text": "-0.135 [-0.187, -0.084]*",
+  "mean": -0.13543449344287992,
+  "ci_lo": -0.18745516451660807,
+  "ci_hi": -0.0842471606221161
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 대사형 & CYP 공유",
+  "split": "S1_123",
+  "text": "-0.028 [-0.060, -0.000]*",
+  "mean": -0.028469405944606268,
+  "ci_lo": -0.060491204564999214,
+  "ci_hi": -0.0003715636162450947
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 비PK & CYP 공유",
+  "split": "S1_1",
+  "text": "+0.000 [-0.048, +0.040]",
+  "mean": 0.00019879883429748538,
+  "ci_lo": -0.04776243209859748,
+  "ci_hi": 0.040394871466767866
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 비PK & CYP 공유",
+  "split": "S1_12",
+  "text": "+0.024 [-0.078, +0.140]",
+  "mean": 0.023526579038889654,
+  "ci_lo": -0.07835392070846033,
+  "ci_hi": 0.14022508788047394
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 비PK & CYP 공유",
+  "split": "S1_123",
+  "text": "+0.034 [+0.005, +0.067]*",
+  "mean": 0.03408936500683718,
+  "ci_lo": 0.005383958575553392,
+  "ci_hi": 0.0665003685398095
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 타입 46",
+  "split": "S1_1",
+  "text": "-0.049 [-0.083, -0.023]*",
+  "mean": -0.049179361878091604,
+  "ci_lo": -0.08272683656858125,
+  "ci_hi": -0.022863504090544797
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 타입 46",
+  "split": "S1_12",
+  "text": "-0.129 [-0.181, -0.070]*",
+  "mean": -0.12921389696281482,
+  "ci_lo": -0.1810115072681709,
+  "ci_hi": -0.0704173074120344
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: key_perm, 타입 46",
+  "split": "S1_123",
+  "text": "-0.031 [-0.060, -0.005]*",
+  "mean": -0.030561106182956817,
+  "ci_lo": -0.06035597771667275,
+  "ci_hi": -0.005032688971189329
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득 NLL(off)-NLL(original), 대사 & CYP",
+  "split": "S1_1",
+  "text": "+0.070 [-0.086, +0.247]",
+  "mean": 0.07026469025403669,
+  "ci_lo": -0.08562343735586436,
+  "ci_hi": 0.2474083988390899
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득 NLL(off)-NLL(original), 대사 & CYP",
+  "split": "S1_12",
+  "text": "+0.013 [-0.040, +0.062]",
+  "mean": 0.013039263527148813,
+  "ci_lo": -0.03970763384176777,
+  "ci_hi": 0.06222237101446302
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득 NLL(off)-NLL(original), 대사 & CYP",
+  "split": "S1_123",
+  "text": "-0.006 [-0.098, +0.092]",
+  "mean": -0.005918725091802356,
+  "ci_lo": -0.0979051767298489,
+  "ci_hi": 0.09245664786449083
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득, 전체",
+  "split": "S1_1",
+  "text": "+0.037 [-0.025, +0.106]",
+  "mean": 0.036561408552298544,
+  "ci_lo": -0.025170856434329442,
+  "ci_hi": 0.10618643060438121
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득, 전체",
+  "split": "S1_12",
+  "text": "-0.013 [-0.070, +0.029]",
+  "mean": -0.012573906925726635,
+  "ci_lo": -0.07028890810987762,
+  "ci_hi": 0.028800323591806495
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득, 전체",
+  "split": "S1_123",
+  "text": "-0.003 [-0.052, +0.050]",
+  "mean": -0.002745090302098167,
+  "ci_lo": -0.051550853269376896,
+  "ci_hi": 0.05023733040926141
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득이 유의한 층 수",
+  "split": "S1_1",
+  "text": "0 / 19 (이득 0, 손해 0)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득이 유의한 층 수",
+  "split": "S1_12",
+  "text": "3 / 19 (이득 3, 손해 0)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "llm: 게이트 이득이 유의한 층 수",
+  "split": "S1_123",
+  "text": "2 / 19 (이득 1, 손해 1)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득이 유의한 층 수",
+  "split": "S1_1",
+  "text": "1 / 19 (이득 1, 손해 0)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득이 유의한 층 수",
+  "split": "S1_12",
+  "text": "3 / 19 (이득 3, 손해 0)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "3. 게이트는 그 자리에서만 엔티티 정보를 쓴다 (F1 + F2)",
+  "item": "name: 게이트 이득이 유의한 층 수",
+  "split": "S1_123",
+  "text": "3 / 19 (이득 0, 손해 3)",
+  "mean": null,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 대사형",
+  "split": "S1_1",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 대사형",
+  "split": "S1_12",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 대사형",
+  "split": "S1_123",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 비PK",
+  "split": "S1_1",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 비PK",
+  "split": "S1_12",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 비PK",
+  "split": "S1_123",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 차이",
+  "split": "S1_1",
+  "text": "+0.000 [+0.000, +0.000]",
+  "mean": 0.0,
+  "ci_lo": 0.0,
+  "ci_hi": 0.0
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 차이",
+  "split": "S1_12",
+  "text": "+0.000 [+0.000, +0.000]",
+  "mean": 0.0,
+  "ci_lo": 0.0,
+  "ci_hi": 0.0
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): AUC 차이",
+  "split": "S1_123",
+  "text": "+0.000 [+0.000, +0.000]",
+  "mean": 0.0,
+  "ci_lo": 0.0,
+  "ci_hi": 0.0
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): 연결 수가 불리한 AUC 대사형",
+  "split": "S1_1",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): 연결 수가 불리한 AUC 대사형",
+  "split": "S1_12",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "원 EmerGNN (동점): 연결 수가 불리한 AUC 대사형",
+  "split": "S1_123",
+  "text": "0.500 [0.500, 0.500]",
+  "mean": 0.5,
+  "ci_lo": 0.5,
+  "ci_hi": 0.5
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 대사형",
+  "split": "S1_1",
+  "text": "0.716 [0.657, 0.792]*",
+  "mean": 0.7156719698445159,
+  "ci_lo": 0.657371406415344,
+  "ci_hi": 0.7920217215813097
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 대사형",
+  "split": "S1_12",
+  "text": "0.737 [0.678, 0.807]*",
+  "mean": 0.7373590704802282,
+  "ci_lo": 0.6775318216026875,
+  "ci_hi": 0.8065768019998947
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 대사형",
+  "split": "S1_123",
+  "text": "0.745 [0.692, 0.827]*",
+  "mean": 0.7451919156894885,
+  "ci_lo": 0.6922469696710534,
+  "ci_hi": 0.8265022611361657
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 비PK",
+  "split": "S1_1",
+  "text": "0.866 [0.828, 0.909]*",
+  "mean": 0.8657194480648783,
+  "ci_lo": 0.8279959641873447,
+  "ci_hi": 0.9087507043019828
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 비PK",
+  "split": "S1_12",
+  "text": "0.879 [0.835, 0.921]*",
+  "mean": 0.8789314568285955,
+  "ci_lo": 0.8346821568284524,
+  "ci_hi": 0.9210585174871394
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 비PK",
+  "split": "S1_123",
+  "text": "0.882 [0.834, 0.923]*",
+  "mean": 0.8820777776986476,
+  "ci_lo": 0.8344325287209222,
+  "ci_hi": 0.9230448366843353
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 차이",
+  "split": "S1_1",
+  "text": "-0.150 [-0.207, -0.085]*",
+  "mean": -0.15004747822036246,
+  "ci_lo": -0.20672674801283428,
+  "ci_hi": -0.08510013648276524
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 차이",
+  "split": "S1_12",
+  "text": "-0.142 [-0.206, -0.081]*",
+  "mean": -0.14157238634836733,
+  "ci_lo": -0.2064484644747089,
+  "ci_hi": -0.08121404543481368
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: AUC 차이",
+  "split": "S1_123",
+  "text": "-0.137 [-0.186, -0.067]*",
+  "mean": -0.1368858620091591,
+  "ci_lo": -0.18607441679402428,
+  "ci_hi": -0.06653752500261868
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_1",
+  "text": "0.000 [0.000, 0.000]*",
+  "mean": 0.0,
+  "ci_lo": 0.0,
+  "ci_hi": 0.0
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_12",
+  "text": "0.000 [0.000, 0.001]*",
+  "mean": 0.00024847601378213626,
+  "ci_lo": 0.0,
+  "ci_hi": 0.0007395576288513203
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "연결 수 순: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_123",
+  "text": "0.000 [0.000, 0.001]*",
+  "mean": 0.00025479005299633103,
+  "ci_lo": 0.0,
+  "ci_hi": 0.0008086747222598563
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 대사형",
+  "split": "S1_1",
+  "text": "0.650 [0.522, 0.786]*",
+  "mean": 0.6504999911259497,
+  "ci_lo": 0.522202253763711,
+  "ci_hi": 0.786375039374804
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 대사형",
+  "split": "S1_12",
+  "text": "0.429 [0.347, 0.498]*",
+  "mean": 0.4287396093671167,
+  "ci_lo": 0.34713141315290624,
+  "ci_hi": 0.49756996516395136
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 대사형",
+  "split": "S1_123",
+  "text": "0.574 [0.515, 0.632]*",
+  "mean": 0.5737260538621496,
+  "ci_lo": 0.5150123553110305,
+  "ci_hi": 0.6323149600787592
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 비PK",
+  "split": "S1_1",
+  "text": "0.603 [0.540, 0.665]*",
+  "mean": 0.6033014561767849,
+  "ci_lo": 0.53983693185189,
+  "ci_hi": 0.6649075922267326
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 비PK",
+  "split": "S1_12",
+  "text": "0.450 [0.403, 0.504]",
+  "mean": 0.4500067478015085,
+  "ci_lo": 0.40315487436878295,
+  "ci_hi": 0.5038229862554802
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 비PK",
+  "split": "S1_123",
+  "text": "0.477 [0.431, 0.527]",
+  "mean": 0.4768108632207127,
+  "ci_lo": 0.43139489093488415,
+  "ci_hi": 0.5268856324250072
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 차이",
+  "split": "S1_1",
+  "text": "+0.047 [-0.065, +0.169]",
+  "mean": 0.047198534949164817,
+  "ci_lo": -0.06458040314507053,
+  "ci_hi": 0.16892889570385375
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 차이",
+  "split": "S1_12",
+  "text": "-0.021 [-0.119, +0.061]",
+  "mean": -0.02126713843439182,
+  "ci_lo": -0.11907796911529009,
+  "ci_hi": 0.06060083316808017
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: AUC 차이",
+  "split": "S1_123",
+  "text": "+0.097 [+0.039, +0.147]*",
+  "mean": 0.09691519064143689,
+  "ci_lo": 0.039084002968452713,
+  "ci_hi": 0.14672174369197438
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_1",
+  "text": "0.623 [0.465, 0.774]",
+  "mean": 0.6226402485113287,
+  "ci_lo": 0.46475428614189923,
+  "ci_hi": 0.7735462522908706
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_12",
+  "text": "0.381 [0.259, 0.485]*",
+  "mean": 0.38067261536649283,
+  "ci_lo": 0.2592184121766691,
+  "ci_hi": 0.4848945868307242
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm best: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_123",
+  "text": "0.598 [0.536, 0.662]*",
+  "mean": 0.5977349299098178,
+  "ci_lo": 0.5363833146157149,
+  "ci_hi": 0.6620897120512099
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 대사형",
+  "split": "S1_1",
+  "text": "0.568 [0.526, 0.625]*",
+  "mean": 0.5684517954849626,
+  "ci_lo": 0.5255766506991243,
+  "ci_hi": 0.6245744830534701
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 대사형",
+  "split": "S1_12",
+  "text": "0.739 [0.682, 0.792]*",
+  "mean": 0.7394269435922426,
+  "ci_lo": 0.6823790936377468,
+  "ci_hi": 0.7923063323290365
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 대사형",
+  "split": "S1_123",
+  "text": "0.558 [0.469, 0.633]",
+  "mean": 0.5575518798507703,
+  "ci_lo": 0.4689987756579637,
+  "ci_hi": 0.6330374585222633
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 비PK",
+  "split": "S1_1",
+  "text": "0.455 [0.407, 0.512]",
+  "mean": 0.4548762440024249,
+  "ci_lo": 0.40650166149909056,
+  "ci_hi": 0.5119404630543858
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 비PK",
+  "split": "S1_12",
+  "text": "0.515 [0.447, 0.584]",
+  "mean": 0.5147460233647514,
+  "ci_lo": 0.44725203436939165,
+  "ci_hi": 0.5841161968399536
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 비PK",
+  "split": "S1_123",
+  "text": "0.589 [0.539, 0.638]*",
+  "mean": 0.5887329900491457,
+  "ci_lo": 0.5388494909462934,
+  "ci_hi": 0.6379175129815468
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 차이",
+  "split": "S1_1",
+  "text": "+0.114 [+0.060, +0.173]*",
+  "mean": 0.11357555148253773,
+  "ci_lo": 0.060192837302713055,
+  "ci_hi": 0.17270653455903037
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 차이",
+  "split": "S1_12",
+  "text": "+0.225 [+0.136, +0.312]*",
+  "mean": 0.2246809202274912,
+  "ci_lo": 0.13577655940935196,
+  "ci_hi": 0.31186807790560866
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: AUC 차이",
+  "split": "S1_123",
+  "text": "-0.031 [-0.114, +0.040]",
+  "mean": -0.03118111019837544,
+  "ci_lo": -0.11364054354766513,
+  "ci_hi": 0.04003400594652342
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_1",
+  "text": "0.530 [0.497, 0.566]",
+  "mean": 0.5295252382795937,
+  "ci_lo": 0.49683508531570775,
+  "ci_hi": 0.566341791255254
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_12",
+  "text": "0.723 [0.668, 0.779]*",
+  "mean": 0.7231780266219042,
+  "ci_lo": 0.6680234054306387,
+  "ci_hi": 0.7791962369150143
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name best: 연결 수가 불리한 AUC 대사형",
+  "split": "S1_123",
+  "text": "0.523 [0.405, 0.611]",
+  "mean": 0.5227695759646432,
+  "ci_lo": 0.40537460264021696,
+  "ci_hi": 0.611050246773874
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm: 게이트와 연결 수의 순위 상관, 절댓값 최대 (유전자)",
+  "split": "S1_1",
+  "text": "0.057",
+  "mean": 0.05739469234479133,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm: 게이트와 연결 수의 순위 상관, 절댓값 최대 (유전자)",
+  "split": "S1_12",
+  "text": "0.147",
+  "mean": 0.14687261672431381,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm: 게이트와 연결 수의 순위 상관, 절댓값 최대 (유전자)",
+  "split": "S1_123",
+  "text": "0.139",
+  "mean": 0.13940383572285206,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm: 연결 수 통제 후 CYP 게이트 상승",
+  "split": "S1_1",
+  "text": "+0.052 [+0.030, +0.072]*",
+  "mean": 0.05180709047891447,
+  "ci_lo": 0.03023452738134464,
+  "ci_hi": 0.07178429024388362
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm: 연결 수 통제 후 CYP 게이트 상승",
+  "split": "S1_12",
+  "text": "-0.057 [-0.066, -0.045]*",
+  "mean": -0.05670686805355474,
+  "ci_lo": -0.06597965740010144,
+  "ci_hi": -0.045193755973905646
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "llm: 연결 수 통제 후 CYP 게이트 상승",
+  "split": "S1_123",
+  "text": "+0.063 [+0.053, +0.074]*",
+  "mean": 0.0627921295292966,
+  "ci_lo": 0.05251580544165816,
+  "ci_hi": 0.07364830749968405
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name: 게이트와 연결 수의 순위 상관, 절댓값 최대 (유전자)",
+  "split": "S1_1",
+  "text": "0.086",
+  "mean": 0.0863709322415215,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name: 게이트와 연결 수의 순위 상관, 절댓값 최대 (유전자)",
+  "split": "S1_12",
+  "text": "0.090",
+  "mean": 0.0901683438518161,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name: 게이트와 연결 수의 순위 상관, 절댓값 최대 (유전자)",
+  "split": "S1_123",
+  "text": "0.061",
+  "mean": 0.06077224833399935,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name: 연결 수 통제 후 CYP 게이트 상승",
+  "split": "S1_1",
+  "text": "+0.044 [+0.035, +0.053]*",
+  "mean": 0.04415052571089548,
+  "ci_lo": 0.034616154319278614,
+  "ci_hi": 0.05303450654046816
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name: 연결 수 통제 후 CYP 게이트 상승",
+  "split": "S1_12",
+  "text": "+0.080 [+0.066, +0.095]*",
+  "mean": 0.07969707308571408,
+  "ci_lo": 0.0658967109027559,
+  "ci_hi": 0.09489896306786152
+ },
+ {
+  "chapter": "4. 게이트는 공유 CYP를 짚는가 (E2, E4)",
+  "item": "name: 연결 수 통제 후 CYP 게이트 상승",
+  "split": "S1_123",
+  "text": "-0.032 [-0.036, -0.027]*",
+  "mean": -0.03194450681657479,
+  "ci_lo": -0.03584384349293576,
+  "ci_hi": -0.02736271471861837
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "AUC 대사형 llm - name",
+  "split": "S1_1",
+  "text": "0.082",
+  "mean": 0.08204819564098709,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "AUC 대사형 llm - name",
+  "split": "S1_12",
+  "text": "-0.311",
+  "mean": -0.3106873342251259,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "AUC 대사형 llm - name",
+  "split": "S1_123",
+  "text": "0.016",
+  "mean": 0.016174174011379328,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "AUC 비PK llm - name",
+  "split": "S1_1",
+  "text": "0.148",
+  "mean": 0.14842521217436,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "AUC 비PK llm - name",
+  "split": "S1_12",
+  "text": "-0.065",
+  "mean": -0.06473927556324288,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "AUC 비PK llm - name",
+  "split": "S1_123",
+  "text": "-0.112",
+  "mean": -0.111922126828433,
+  "ci_lo": null,
+  "ci_hi": null
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 전체",
+  "split": "S1_1",
+  "text": "+0.095 [-0.098, +0.299]",
+  "mean": 0.09475847647538331,
+  "ci_lo": -0.09846947211227221,
+  "ci_hi": 0.2992739176705103
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 전체",
+  "split": "S1_12",
+  "text": "+0.059 [-0.076, +0.202]",
+  "mean": 0.05895764530012303,
+  "ci_lo": -0.0759915181976357,
+  "ci_hi": 0.20162982125424628
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 전체",
+  "split": "S1_123",
+  "text": "+0.046 [-0.153, +0.287]",
+  "mean": 0.046352411246868654,
+  "ci_lo": -0.15279407512387227,
+  "ci_hi": 0.2867731473553527
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 대사",
+  "split": "S1_1",
+  "text": "+0.055 [-0.264, +0.387]",
+  "mean": 0.055330201843664835,
+  "ci_lo": -0.2637324633749153,
+  "ci_hi": 0.3873250560922298
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 대사",
+  "split": "S1_12",
+  "text": "+0.133 [-0.092, +0.427]",
+  "mean": 0.13334154245004076,
+  "ci_lo": -0.0920736849297991,
+  "ci_hi": 0.4273420357103167
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 대사",
+  "split": "S1_123",
+  "text": "+0.277 [-0.427, +1.091]",
+  "mean": 0.27747873908738135,
+  "ci_lo": -0.42694616722967116,
+  "ci_hi": 1.090946184286299
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 기타 PK",
+  "split": "S1_1",
+  "text": "+0.054 [-0.284, +0.405]",
+  "mean": 0.05409792501232269,
+  "ci_lo": -0.28383337152514054,
+  "ci_hi": 0.40534904211732137
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 기타 PK",
+  "split": "S1_12",
+  "text": "+0.303 [-0.074, +0.666]",
+  "mean": 0.3031918629696507,
+  "ci_lo": -0.07376769397755266,
+  "ci_hi": 0.6657429888253438
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 기타 PK",
+  "split": "S1_123",
+  "text": "-0.024 [-0.216, +0.188]",
+  "mean": -0.024250097361814344,
+  "ci_lo": -0.215639738512275,
+  "ci_hi": 0.18768118638892403
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), PD",
+  "split": "S1_1",
+  "text": "-0.035 [-0.560, +0.438]",
+  "mean": -0.03547051515508482,
+  "ci_lo": -0.5595140677732958,
+  "ci_hi": 0.438039074477664
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), PD",
+  "split": "S1_12",
+  "text": "-0.167 [-0.465, +0.142]",
+  "mean": -0.16673024081147117,
+  "ci_lo": -0.4648872203519437,
+  "ci_hi": 0.1421770279505137
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), PD",
+  "split": "S1_123",
+  "text": "-0.003 [-0.305, +0.330]",
+  "mean": -0.0028690819956826183,
+  "ci_lo": -0.3053908690648674,
+  "ci_hi": 0.32964379244380254
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 불특정",
+  "split": "S1_1",
+  "text": "+0.261 [+0.054, +0.537]*",
+  "mean": 0.26090218967998624,
+  "ci_lo": 0.05433932878663776,
+  "ci_hi": 0.5366144337300791
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 불특정",
+  "split": "S1_12",
+  "text": "+0.070 [-0.058, +0.195]",
+  "mean": 0.07038878749890676,
+  "ci_lo": -0.057786609751547605,
+  "ci_hi": 0.194659296215755
+ },
+ {
+  "chapter": "5. llm과 name의 차이",
+  "item": "NLL(name) - NLL(llm), 불특정",
+  "split": "S1_123",
+  "text": "-0.006 [-0.170, +0.133]",
+  "mean": -0.006027902329678722,
+  "ci_lo": -0.16956728739999588,
+  "ci_hi": 0.1325986313917727
+ }
+]

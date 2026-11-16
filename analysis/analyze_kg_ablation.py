@@ -6,6 +6,8 @@ drugs). CPU only; run from DrugBank/ after copying runs/<tag>/kg_ablation from t
 Full-KG predictions on the same 8,195 pairs come from runs/<tag>/gate_interventions. Every model is read
 with its gate ('original') and without it ('off' = the EmerGNN forward pass); 'emergnn_x4' averages
 the per-pair quantity over the four 'off' models (four backbones co-trained with different keys).
+If kg_ablation.py was also run on the ungated checkpoint (baseline_best__<variant>.npz, including the
+variant 'full'), it is reported as the model 'baseline' with the condition 'original' only.
 Intervals are 95% bootstrap intervals over emerging drugs; differences use the same draws.
 
 F4, per mechanism class (metabolism / other PK / PD / unspecified, as in stratify.py)
@@ -47,15 +49,24 @@ cli.out = cli.out or res_path('kg_ablation.json')
 np.seterr(invalid='ignore', divide='ignore')
 CLASSES = ['metabolism', 'pk_other', 'pd', 'unspecified']
 CONDS = ['original', 'off']
+BASE = 'baseline'                 # ungated checkpoint: no 'off', full-KG reference is its own 'full' variant
+
+
+def fname(key, v):
+    return f'{cli.dir}/baseline_best__{v}.npz' if key == BASE else f'{cli.dir}/{key}-v2_best__{v}.npz'
+
+
+def conds_of(key):
+    return ['original'] if key == BASE else CONDS
 
 
 def load_variant(key, v):
-    f = f'{cli.dir}/{key}-v2_best__{v}.npz'
+    f = fname(key, v)
     if not os.path.exists(f):
         return None, None
     z = np.load(f)
     out = {}
-    for c in CONDS:
+    for c in conds_of(key):
         q = np.clip(z[c].astype(np.float64), 1e-7, 1)
         out[c] = q / q.sum(1, keepdims=True)
     return z['rows'], out
@@ -95,6 +106,17 @@ for key in KEYS:
         if pv is not None:
             assert (rv == rows).all()
             probs[key, v] = pv
+MODELS = list(KEYS)
+if os.path.exists(fname(BASE, 'full')):
+    MODELS.append(BASE)
+    rb, ref[BASE] = load_variant(BASE, 'full')
+    assert (rb == rows).all()
+    for v in variants:
+        rv, pv = load_variant(BASE, v)
+        if pv is not None:
+            assert (rv == rows).all()
+            probs[BASE, v] = pv
+    print('baseline (ungated) variants found:', [v for v in variants if (BASE, v) in probs])
 M = boot_multiplicity(new_drug, cli.n_boot)
 
 
@@ -132,7 +154,7 @@ cm = {c: cls == c for c in CLASSES}
 res['accuracy'] = {f'{key}/{c}': {v: float(np.average((pr[c].argmax(1) == y), weights=w))
                                   for v, pr in [('full', ref[key])] + [(v, probs[key, v]) for v in variants
                                                                        if (key, v) in probs]}
-                   for key in KEYS for c in CONDS}
+                   for key in MODELS for c in conds_of(key)}
 print('\n### accuracy per variant')
 for name, a in res['accuracy'].items():
     print(f'{name:16s} ' + '  '.join(f'{v} {x:.3f}' for v, x in a.items()))
@@ -141,8 +163,8 @@ for name, a in res['accuracy'].items():
 f4 = [v for v in F4 if v in variants]
 if 'cyp' in f4:
     q = {}                                        # (model, cond) -> per-pair arrays
-    for key in KEYS:
-        for c in CONDS:
+    for key in MODELS:
+        for c in conds_of(key):
             d = {'metab_pred_full': np.isin(ref[key][c].argmax(1), list(METAB)).astype(float)}
             for v in f4:
                 if (key, v) in probs:
@@ -165,7 +187,7 @@ if 'cyp' in f4:
             if xc is not None:
                 o[f'cyp-{ctrl}'] = {cl: cell(x - xc, cm[cl]) for cl in CLASSES}
                 o[f'cyp-{ctrl}_metab-pd'] = diff(x - xc, cm['metabolism'], x - xc, cm['pd'])
-        if c == 'original' and 'dlogp_cyp' in q[key, 'off']:
+        if c == 'original' and (key, 'off') in q and 'dlogp_cyp' in q[key, 'off']:
             g = x - q[key, 'off']['dlogp_cyp']
             o['gate_original-off'] = {cl: cell(g, cm[cl]) for cl in CLASSES}
         o['pull'] = {}
@@ -241,8 +263,8 @@ if len(levels) > 1:
         return point, draws
 
     every = np.ones(len(rows), bool)
-    for key in KEYS:
-        for c in CONDS:
+    for key in MODELS:
+        for c in conds_of(key):
             if not all((key, v) in probs for v in levels[1:]):
                 continue
             full = ref[key][c]
