@@ -118,7 +118,7 @@ files but not in the report. Seeds 1 and 2 have the same files under `results/S1
 | accuracy after removing 90% / 100% of an emerging drug's edges | `kg_ablation.py`, `analyze_kg_ablation.py` | `kg_ablation.json` | `accuracy/<key>/original` (`new90`, `new100`) |
 | heuristic .529 | `analyze_kg_ablation.py` | `kg_ablation.json` | `m1_reference/existing_drug_top_type` |
 | natural degree variation, temperature | `kg_calibration.py` | `kg_calibration.json` | `models/<key>/<cond>/raw_drug_degree`, `temp_*`, `T` |
-| accuracy with the ungated baseline in the same table | `analyze_kg_ablation.py --out ...` | `kg_ablation_with_baseline.json` | `accuracy/baseline/original`, `f4/baseline/original` |
+| accuracy with the ungated baseline in the same table | `analyze_kg_ablation.py --keys llm name --out ...` | `kg_ablation_llm_name_baseline.json` | `accuracy/baseline/original`, `f4/baseline/original` |
 | gate minus baseline, per seed and pooled | `gate_vs_baseline.py` | `gate_vs_baseline.json` | `rows/<variant>|<stratum>|<key>-baseline|<seed or pooled>` |
 | calibration with the validation temperature | `valid_calibration.py` | `valid_calibration.json` | gap and ECE per stratum: raw, validation T, oracle T |
 | deletion of gate-ranked entities | `analyze_gate_rank_deletion.py` | `gate_rank_deletion.json` | `rows/<key>|<condition>|<measure>|<set or contrast>|<class>|<seed or pooled>` |

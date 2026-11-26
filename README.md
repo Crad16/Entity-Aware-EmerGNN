@@ -94,6 +94,7 @@ Run from `DrugBank/`. Small tables go to `results/<tag>/`, saved probabilities t
 | `valid_probs.py`, `valid_calibration.py` | calibration with a temperature fitted on the validation pairs |
 | `gate_vs_baseline.py`, `compare_seeds.py` | gated models against the ungated baseline, per seed and pooled |
 | `control_keys_sparse_kg.py` | KG deletions for the control keys (id, random, desc, llmperm; seed 0) |
+| `fold_summary.py` | the same key numbers side by side for the splits S1_1, S1_12, S1_123 |
 | `summarize.py` | best-validation epoch of a run log |
 
 Earlier exploratory scripts (v1 gate): `analyze_gates.py`, `explain_shared_cyp.py`,
@@ -145,6 +146,17 @@ Accuracy on the sample when KG edges are removed at test time (seed 0 / 1 / 2):
   (`gate_vs_baseline.json`); all models are then below the .529 obtained by
   predicting the most frequent type of the known drug.
 
+Other splits, one run each (`results/fold_summary.md`, `results/S1_12/`, `results/S1_123/`):
+
+| split | F1: EmerGNN / name / LLM | accuracy, full KG -> no CYP edges: EmerGNN / name / LLM | 100% of the emerging drug's edges removed |
+|---|---|---|---|
+| S1_12 | 0.625 / 0.623 / 0.618 | .749 -> .707 / .763 -> .731 / .767 -> .734 | .384 / .447 / .462 |
+| S1_123 | 0.627 / 0.629 / 0.634 | .796 -> .771 / .798 -> .762 / .778 -> .738 | .396 / .432 / .300 |
+
+The tie rates, the cost of removing the CYP edges and the errors on shared-CYP PD pairs repeat on
+both splits. The gain under edge removal repeats for the name keys; with LLM keys it holds on S1_12
+and reverses on S1_123.
+
 Trained DrugBank models are in `DrugBank/saved_models/`
 (`<split>_learned_shuf[_gate-<key>-v2]_seed<k>_<best|last>.pt`).
 
@@ -156,7 +168,7 @@ entity_gate.py         entity gate
 entity_text/           entity tables, descriptions, embedding scripts
 analysis/              analyses, REPRODUCE.md
 scripts/               environment, torchdrug patch, GPU/tmux launcher, curve export
-results/               curves (per run) and analysis outputs (per split and seed)
+results/               curves and evaluation logs (per run), analysis outputs (per split and seed)
 ```
 
 ## Acknowledgements
