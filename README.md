@@ -112,12 +112,13 @@ Test macro-F1, mean over epochs 10-20 (`results/curves/`):
 
 | model | seed 0 | seed 1 | seed 2 | mean ± sd |
 |---|---|---|---|---|
-| EmerGNN | 0.617 (a) | 0.593 | 0.602 | 0.597 ± 0.007 (b) |
+| EmerGNN | 0.601 (a) | 0.593 | 0.602 | 0.599 ± 0.005 |
 | + gate, name keys | 0.602 | 0.582 | 0.613 | 0.599 ± 0.016 |
-| + gate, LLM keys | 0.610 | 0.594 | 0.595 | 0.599 ± 0.009 |
+| + gate, LLM keys | 0.610 | 0.594 | 0.595 | 0.600 ± 0.009 |
 
-(a) from a 40-epoch run; the seed-0 checkpoint used in the analyses is a separate 20-epoch run.
-(b) seeds 1 and 2.
+Mean and sample sd are computed from the rounded seed values.
+(a) the 20-epoch run whose checkpoint is used in the analyses. Its test curve is not in
+`results/curves/`; `drugbank_S1_1_emergnn.csv` there is an earlier 40-epoch run (0.617 over the same window).
 Single runs with other keys (seed 0): id 0.628, random 0.630, desc 0.599, llmperm 0.602.
 
 Accuracy on the sample when KG edges are removed at test time (seed 0 / 1 / 2):
