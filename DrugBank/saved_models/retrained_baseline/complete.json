@@ -1,0 +1,6 @@
+{
+  "epochs": 20,
+  "best_epoch": 14,
+  "best_valid_f1": 0.6365547597695728,
+  "checkpoint": "/home/changyu/emergnn_m1_f4_e4/Entity-Aware-EmerGNN-main/DrugBank/saved_models/retrained_baseline/S1_1_learned_shuf_seed0_best.pt"
+}

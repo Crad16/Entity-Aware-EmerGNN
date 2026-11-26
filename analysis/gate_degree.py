@@ -20,6 +20,8 @@ least one CYP and one non-CYP candidate), now with 95% bootstrap intervals over 
 degree-adverse AUC: only the (CYP, non-CYP) comparisons in which the non-CYP gene binds at least
 as many drugs as the CYP, where ranking by degree cannot pick the CYP. EmerGNN ties every
 candidate (AUC 0.5; its hit@1 is the CYP share among candidates, i.e. a random pick).
+With two or more keys, `key_contrast` holds the paired difference of the AUCs and of the gap between
+each two keys (same pairs, same bootstrap resamples of emerging drugs).
 """
 import argparse
 import json
@@ -88,7 +90,10 @@ def pair_scores(score, pos, deg):
     return auc, pos[top].mean(), adv
 
 
-def evaluate(score_of):
+DRAWS = {}                                                     # label -> group -> (mean AUC, bootstrap draws)
+
+
+def evaluate(score_of, label=None):
     per = np.array([pair_scores(score_of(j), pos, bind_deg[cand]) for j, (_, cand, pos) in enumerate(items)])
     out = {}
     draws = {}
@@ -104,6 +109,9 @@ def evaluate(score_of):
     out['gap'] = {name: {'mean': out['metabolism'][name]['mean'] - out['non_pk'][name]['mean'],
                          'ci': np.percentile(draws['metabolism'][name] - draws['non_pk'][name], [2.5, 97.5]).tolist()}
                   for name in ['auc', 'hit1', 'adverse_auc']}
+    if label is not None:
+        DRAWS[label] = {g: (out[g]['auc']['mean'], draws[g]['auc']) for g in ['metabolism', 'non_pk']}
+        DRAWS[label]['gap'] = (out['gap']['auc']['mean'], draws['metabolism']['auc'] - draws['non_pk']['auc'])
     return out
 
 
@@ -176,7 +184,7 @@ for key in KEYS:
                if len(c) >= 3 and np.ptp(cand_scores[j]) > 0 and np.ptp(bind_deg[c]) > 0]
         e4['within_pair_rho_mean'] = float(np.mean(rho))
         e4['within_pair_n'] = len(rho)
-        results[f'{key}-v2 [{which}]'] = {'e4': e4, 'e2': evaluate(lambda j: cand_scores[j])}
+        results[f'{key}-v2 [{which}]'] = {'e4': e4, 'e2': evaluate(lambda j: cand_scores[j], (key, which))}
         print(f'{key}-v2 [{which}] done', flush=True)
 
 # ------------------------------------------------------------------ report
@@ -208,5 +216,19 @@ for name, r in results.items():
           f'hit@1 metab {f(e["metabolism"]["hit1"])} nonPK {f(e["non_pk"]["hit1"])} gap {fg(e["gap"]["hit1"])} | '
           f'deg-adverse AUC metab {f(e["metabolism"]["adverse_auc"])} nonPK {f(e["non_pk"]["adverse_auc"])} '
           f'gap {fg(e["gap"]["adverse_auc"])}')
+contrast = {}
+for which in cli.ckpts:
+    for a in range(len(KEYS)):
+        for b in range(a):
+            ka, kb = KEYS[a], KEYS[b]
+            contrast[f'{ka}-{kb} [{which}]'] = {
+                g: {'mean': DRAWS[ka, which][g][0] - DRAWS[kb, which][g][0],
+                    'ci': np.percentile(DRAWS[ka, which][g][1] - DRAWS[kb, which][g][1], [2.5, 97.5]).tolist()}
+                for g in ['metabolism', 'non_pk', 'gap']}
+if contrast:
+    print('\nkey vs key, paired difference of the shared-CYP ranking AUC (same pairs and resamples)')
+    for name, c in contrast.items():
+        print(f'{name:20s} metab {fg(c["metabolism"])}  nonPK {fg(c["non_pk"])}  gap {fg(c["gap"])}')
+    results['key_contrast'] = contrast
 json.dump(results, open(cli.out, 'w'), indent=1)
 print('saved', cli.out)

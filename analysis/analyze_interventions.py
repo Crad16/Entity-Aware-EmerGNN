@@ -2,7 +2,8 @@
 
     python ../analysis/analyze_interventions.py
 
-Reads runs/<tag>/gate_interventions/<key>-v2_best_probs.npz and reports, per checkpoint:
+Reads runs/<tag>/gate_interventions/<key>-v2_best_probs.npz (<key>-v2_last_probs.npz for a key given
+as '<key>@last') and reports, per checkpoint:
   1. paired contrasts between conditions (change in log-prob of the true type), with 95% bootstrap
      intervals over emerging drugs: key_perm - off, shuffle_all - off, mean - off
   2. whether a same-type donor query moves predictions less than a random donor (KL to the original),
@@ -17,7 +18,7 @@ import re
 
 import numpy as np
 
-from ablation_common import ENT_TSV, res_path, run_dir, setup
+from ablation_common import ENT_TSV, probs_stem, res_path, run_dir, setup
 
 METAB, PK_OTHER = {46, 3}, {72, 74, 76, 10}
 N_DRUG = 1710
@@ -66,7 +67,7 @@ def stat(values, weights, clusters):
 
 res = {}
 for key in cli.keys:
-    d = np.load(f'{cli.dir}/{key}-v2_best_probs.npz')
+    d = np.load(f'{cli.dir}/{probs_stem(key)}_probs.npz')
     rows, w = d['rows'], d['weight'].astype(float)
     labels, groups = test[rows, 2], group[rows]
     heads, tails = test[rows, 0], test[rows, 1]

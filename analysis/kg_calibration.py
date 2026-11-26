@@ -17,7 +17,7 @@ exactly the EmerGNN forward pass) stands in for it, and the four key types give 
 P3: per third, the gate's gain NLL(off) - NLL(original), and NLL differences between key types.
 
 Probabilities come from runs/<tag>/gate_interventions/<key>-v2_best_probs.npz (8,195 type-stratified test
-pairs, weighted back to the full test set). Intervals are 95% bootstrap intervals over emerging
+pairs, weighted back to the full test set; '<key>@last' reads <key>-v2_last_probs.npz). Intervals are 95% bootstrap intervals over emerging
 drugs; differences between thirds use the same bootstrap draws.
 """
 import argparse

@@ -11,6 +11,9 @@ things to set:
 
 Checkpoints are named saved_models/<dataset>_learned_shuf[_gate-<key>-v2]_seed<k>_<best|last>.pt;
 parse_ckpt() refuses a checkpoint whose split or seed differs from the command line.
+
+A key reads the validation-best checkpoint's files. '<key>@last' reads those of the last epoch
+(--keys llmperm llmperm@last); the two can be given together and appear as separate models.
 """
 import collections
 import csv
@@ -46,7 +49,8 @@ def setup(p):
     if '--train_seed' not in have:
         p.add_argument('--train_seed', type=int, default=0, help='seed<k> in the checkpoint names')
     if '--keys' not in have:
-        p.add_argument('--keys', nargs='+', default=list(KEYS), help='gate key types to analyse')
+        p.add_argument('--keys', nargs='+', default=list(KEYS),
+                       help="gate key types to analyse; '<key>@last' = the last-epoch checkpoint instead of the best")
     cli = p.parse_args()
     DATASET, TRAIN_SEED = cli.dataset, cli.train_seed
     KEYS[:] = cli.keys
@@ -65,6 +69,19 @@ def res_path(name):
     path = os.path.join(ROOT, 'results', tag(), name)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     return path
+
+
+def key_which(key):
+    """'llm' -> ('llm', 'best'); 'llmperm@last' -> ('llmperm', 'last')."""
+    name, _, which = key.partition('@')
+    assert which in ('', 'best', 'last'), f'unknown checkpoint in key {key}'
+    return name, which or 'best'
+
+
+def probs_stem(key):
+    """File stem of a model's saved probabilities: <key>-v2_<best|last> (baseline_<best|last> if ungated)."""
+    name, which = key_which(key)
+    return f'baseline_{which}' if name == 'baseline' else f'{name}-v2_{which}'
 
 
 def ckpt_path(key, which='best'):
@@ -193,9 +210,9 @@ def ece_boot(conf, correct, W, n_bins=15):
     return np.abs(W @ onehot).sum(1) / W.sum(1)
 
 
-def load_probs(key, which='best', d=None):
+def load_probs(key, d=None):
     """Saved probabilities of gate_interventions.py, renormalised in float64."""
-    z = np.load(f'{d or run_dir("gate_interventions")}/{key}-v2_{which}_probs.npz')
+    z = np.load(f'{d or run_dir("gate_interventions")}/{probs_stem(key)}_probs.npz')
     probs = {}
     for c in z.files:
         if c in ('rows', 'weight'):

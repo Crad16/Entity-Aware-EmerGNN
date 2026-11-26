@@ -7,7 +7,7 @@
 #   scripts/launch.sh ts_S1_1_learned_s0 TWOSIDES auto -- --dataset=S1_1 --n_epoch=40 --epoch_per_test=2
 #
 # Logs go to runs/<run_name>.log; attach with `tmux attach -t <run_name>`.
-# EXCLUDE_GPUS="3 4" keeps auto-pick off GPUs used by other work (e.g. the user's ollama servers).
+# EXCLUDE_GPUS="3 4" keeps auto-pick off GPUs used by other work (e.g. someone else's jobs).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 NAME=$1; DATASET_DIR=$2; GPU=${3:-auto}

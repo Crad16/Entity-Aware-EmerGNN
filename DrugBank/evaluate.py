@@ -24,7 +24,7 @@ parser.add_argument('--test_batch_size', type=int, default=16, help='test batch 
 parser.add_argument('--out_file_info', type=str, default='', help='extra string for the output file name')
 parser.add_argument('--seed', type=int, default=0, help='the original code always used seed 0')
 parser.add_argument('--shuffle_order', action='store_true', help='shuffle training pairs every epoch (the original code trains in file order, which is grouped by interaction type)')
-parser.add_argument('--entity_feat', type=str, default='none', choices=['none', 'id', 'random', 'name', 'llm'], help='entity gate keys; none = original EmerGNN')
+parser.add_argument('--entity_feat', type=str, default='none', choices=['none', 'id', 'random', 'name', 'llm', 'llmperm', 'desc'], help='entity gate keys; none = original EmerGNN; llmperm/desc = controls from entity_text/embed_controls.py')
 parser.add_argument('--gate_version', type=str, default='v1', choices=['v1', 'v2'], help='entity gate variant (see entity_gate.py)')
 parser.add_argument('--gate_dim', type=int, default=32, help='entity gate query/key dimension')
 parser.add_argument('--gate_lr', type=float, default=None, help='learning rate for entity gate parameters (default: same as lr)')

@@ -7,6 +7,9 @@ Full-KG predictions on the same 8,195 pairs come from runs/<tag>/gate_interventi
 with its gate ('original') and without it ('off' = the EmerGNN forward pass); 'emergnn_x4' averages
 the per-pair quantity over the four 'off' models (four backbones co-trained with different keys).
 Intervals are 95% bootstrap intervals over emerging drugs; differences use the same draws.
+If the directory also holds the ungated EmerGNN checkpoint's files (baseline_best__<variant>.npz, with
+'full' as its full-KG reference), it is added as the model 'baseline' (condition 'original' only) to
+every table, and 'f4_vs_baseline' gives each gated model's dlogp minus the baseline's on the same pairs.
 
 F4, per mechanism class (metabolism / other PK / PD / unspecified, as in stratify.py)
   dlogp        change in log-probability of the true type when the variant's edges are removed
@@ -34,12 +37,15 @@ import os
 import numpy as np
 
 from ablation_common import KEYS, METAB, boot_multiplicity, cyp_genes, drug_binds, ece_boot, emerging_drug, \
-    entities, fit_T, load_ddi, load_probs, mechanism_class, per_pair, res_path, run_dir, scale, setup
+    entities, fit_T, key_which, load_ddi, load_probs, mechanism_class, per_pair, probs_stem, res_path, run_dir, \
+    scale, setup
 from kg_variants import F4, M1, build
 
 p = argparse.ArgumentParser()
 p.add_argument('--dir', default=None, help='default: runs/<tag>/kg_ablation')
 p.add_argument('--n_boot', type=int, default=1000)
+p.add_argument('--baseline', default='auto', choices=['auto', 'best', 'last', 'none'],
+               help='ungated checkpoint to add as the model "baseline"; auto = best, if its files are in --dir')
 p.add_argument('--out', default=None, help='default: results/<tag>/kg_ablation.json')
 cli = setup(p)
 cli.dir = cli.dir or run_dir('kg_ablation')
@@ -49,19 +55,33 @@ CLASSES = ['metabolism', 'pk_other', 'pd', 'unspecified']
 CONDS = ['original', 'off']
 
 
+def variant_file(key, v):
+    return f'{cli.dir}/{probs_stem(key)}__{v}.npz'
+
+
 def load_variant(key, v):
-    f = f'{cli.dir}/{key}-v2_best__{v}.npz'
+    f = variant_file(key, v)
     if not os.path.exists(f):
         return None, None
     z = np.load(f)
     out = {}
     for c in CONDS:
-        q = np.clip(z[c].astype(np.float64), 1e-7, 1)
-        out[c] = q / q.sum(1, keepdims=True)
+        if c in z.files:                                     # the ungated baseline has no 'off'
+            q = np.clip(z[c].astype(np.float64), 1e-7, 1)
+            out[c] = q / q.sum(1, keepdims=True)
     return z['rows'], out
 
 
-variants = [v for v in F4 + M1 if any(os.path.exists(f'{cli.dir}/{k}-v2_best__{v}.npz') for k in KEYS)]
+BASE = None                                                  # model name of the ungated baseline, if present
+if cli.baseline != 'none':
+    BASE = 'baseline' if cli.baseline in ('auto', 'best') else 'baseline@last'
+    if not os.path.exists(variant_file(BASE, 'full')):
+        assert cli.baseline == 'auto', f'{variant_file(BASE, "full")} not found'
+        BASE = None
+MODELS = list(KEYS) + ([BASE] if BASE else [])
+conds_of = {k: (['original'] if k == BASE else CONDS) for k in MODELS}
+
+variants = [v for v in F4 + M1 if any(os.path.exists(variant_file(k, v)) for k in KEYS)]
 rows = load_variant(*next((k, v) for v in variants for k in KEYS if load_variant(k, v)[0] is not None))[0]
 print('variants found:', variants, f'({len(rows)} pairs)')
 
@@ -95,6 +115,16 @@ for key in KEYS:
         if pv is not None:
             assert (rv == rows).all()
             probs[key, v] = pv
+if BASE:
+    for v in ['full'] + variants:
+        rv, pv = load_variant(BASE, v)
+        if pv is not None:
+            assert (rv == rows).all(), 'the baseline was run on a different sample'
+            if v == 'full':
+                ref[BASE] = pv
+            else:
+                probs[BASE, v] = pv
+    print(f'baseline: {probs_stem(BASE)} with', [v for v in variants if (BASE, v) in probs])
 M = boot_multiplicity(new_drug, cli.n_boot)
 
 
@@ -132,7 +162,7 @@ cm = {c: cls == c for c in CLASSES}
 res['accuracy'] = {f'{key}/{c}': {v: float(np.average((pr[c].argmax(1) == y), weights=w))
                                   for v, pr in [('full', ref[key])] + [(v, probs[key, v]) for v in variants
                                                                        if (key, v) in probs]}
-                   for key in KEYS for c in CONDS}
+                   for key in MODELS for c in conds_of[key]}
 print('\n### accuracy per variant')
 for name, a in res['accuracy'].items():
     print(f'{name:16s} ' + '  '.join(f'{v} {x:.3f}' for v, x in a.items()))
@@ -141,8 +171,8 @@ for name, a in res['accuracy'].items():
 f4 = [v for v in F4 if v in variants]
 if 'cyp' in f4:
     q = {}                                        # (model, cond) -> per-pair arrays
-    for key in KEYS:
-        for c in CONDS:
+    for key in MODELS:
+        for c in conds_of[key]:
             d = {'metab_pred_full': np.isin(ref[key][c].argmax(1), list(METAB)).astype(float)}
             for v in f4:
                 if (key, v) in probs:
@@ -165,7 +195,7 @@ if 'cyp' in f4:
             if xc is not None:
                 o[f'cyp-{ctrl}'] = {cl: cell(x - xc, cm[cl]) for cl in CLASSES}
                 o[f'cyp-{ctrl}_metab-pd'] = diff(x - xc, cm['metabolism'], x - xc, cm['pd'])
-        if c == 'original' and 'dlogp_cyp' in q[key, 'off']:
+        if c == 'original' and 'dlogp_cyp' in q.get((key, 'off'), {}):
             g = x - q[key, 'off']['dlogp_cyp']
             o['gate_original-off'] = {cl: cell(g, cm[cl]) for cl in CLASSES}
         o['pull'] = {}
@@ -185,6 +215,14 @@ if 'cyp' in f4:
         res['f4'][f'{key}/{c}'] = o
     res['f4_lost_shared_gene'] = {v: {cl: float(np.average(lost[v][cm[cl]], weights=w[cm[cl]])) for cl in CLASSES}
                                   for v in F4}
+    if BASE and 'dlogp_cyp' in q[BASE, 'original']:
+        b = q[BASE, 'original']                   # paired: same pairs, gated model minus ungated baseline
+        res['f4_vs_baseline'] = {
+            f'{key}/{c}': dict({n: {cl: cell(d[n] - b[n], cm[cl]) for cl in CLASSES}
+                                for n in d if n.startswith('dlogp_') and n in b},
+                               **{'dlogp_cyp_metab-pd': diff(d['dlogp_cyp'] - b['dlogp_cyp'], cm['metabolism'],
+                                                             d['dlogp_cyp'] - b['dlogp_cyp'], cm['pd'])})
+            for (key, c), d in q.items() if key != BASE and 'dlogp_cyp' in d}
 
     print('\n### F4 share of pairs that lose a shared bound gene')
     for v, r_ in res['f4_lost_shared_gene'].items():
@@ -204,6 +242,11 @@ if 'cyp' in f4:
             print(f'{name:20s} {ctrl}: ' + ' '.join(f'{cl[:5]} {ctrl_d[cl]["mean"]:+.3f}' for cl in CLASSES)
                   + ' | cyp-ctrl: ' + ' '.join(f'{cl[:5]} {fmt(o[f"cyp-{ctrl}"][cl])}' for cl in ['metabolism', 'pd'])
                   + f' | metab-PD {fmt(o[f"cyp-{ctrl}_metab-pd"])}')
+    if 'f4_vs_baseline' in res:
+        print('\n### F4 dlogp(cyp) of each model minus the ungated baseline (< 0: the model relies more on CYP edges)')
+        for name, o in res['f4_vs_baseline'].items():
+            print(f'{name:20s} ' + ' '.join(f'{cl[:5]} {fmt(o["dlogp_cyp"][cl])}' for cl in CLASSES)
+                  + f' | metab-PD {fmt(o["dlogp_cyp_metab-pd"])}')
     print('\n### F4 gate: dlogp(cyp, original) - dlogp(cyp, off)  (< 0: the gate makes the model rely more on CYP edges)')
     for name, o in res['f4'].items():
         if 'gate_original-off' in o:
@@ -241,8 +284,8 @@ if len(levels) > 1:
         return point, draws
 
     every = np.ones(len(rows), bool)
-    for key in KEYS:
-        for c in CONDS:
+    for key in MODELS:
+        for c in conds_of[key]:
             if not all((key, v) in probs for v in levels[1:]):
                 continue
             full = ref[key][c]
@@ -295,11 +338,12 @@ if len(levels) > 1:
 
     res['m1_key_vs_key'] = {}
     acc = {(key, lv): per_pair(ref[key]['original'] if lv == 'full' else probs[key, lv]['original'], y)['acc']
-           for key in KEYS for lv in levels}
+           for key in MODELS for lv in levels if lv == 'full' or (key, lv) in probs}
     print('### M1 key vs key, gate on: accuracy drop (level - full) of the first model minus that of the second')
     for lv in levels[1:]:
-        for a, b in [('llm', 'id'), ('llm', 'random'), ('name', 'id'), ('name', 'random'), ('llm', 'name')]:
-            if a not in KEYS or b not in KEYS:
+        for a, b in [('llm', 'id'), ('llm', 'random'), ('name', 'id'), ('name', 'random'), ('llm', 'name')] \
+                + [(k, BASE) for k in KEYS if BASE]:
+            if a not in MODELS or b not in MODELS or (a, lv) not in acc or (b, lv) not in acc:
                 continue
             s = cell((acc[a, lv] - acc[a, 'full']) - (acc[b, lv] - acc[b, 'full']), every)
             res['m1_key_vs_key'][f'{lv}/{a}-{b}'] = s
